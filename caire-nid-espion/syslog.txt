@@ -1,0 +1,1526 @@
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] Linux version 5.10.0-16-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.127-2 (2022-07-23)
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-16-amd64 root=UUID=b6596a74-b1fd-4f74-8dcf-f22a76354694 ro quiet
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'compacted' format.
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-provided physical RAM map:
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ebff] usable
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x000000000009ec00-0x000000000009ffff] reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x00000000000dc000-0x00000000000fffff] reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007fedffff] usable
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x000000007fee0000-0x000000007fefefff] ACPI data
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x000000007feff000-0x000000007fefffff] ACPI NVS
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x000000007ff00000-0x000000007fffffff] usable
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x00000000f0000000-0x00000000f7ffffff] reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec0ffff] reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffe0000-0x00000000ffffffff] reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] NX (Execute Disable) protection: active
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] SMBIOS 2.7 present.
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] DMI: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 11/12/2020
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] vmware: hypercall mode: 0x01
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] Hypervisor detected: VMware
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] vmware: TSC freq read from hypervisor : 1696.812 MHz
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] vmware: Host bus clock speed read from hypervisor : 66000000 Hz
+Aug  9 11:42:57 michmichmachine kernel: [    0.000000] vmware: using clock offset of 9693500862 ns
+Aug  9 11:42:57 michmichmachine kernel: [    0.000013] tsc: Detected 1696.812 MHz processor
+Aug  9 11:42:57 michmichmachine kernel: [    0.001102] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Aug  9 11:42:57 michmichmachine kernel: [    0.001104] e820: remove [mem 0x000a0000-0x000fffff] usable
+Aug  9 11:42:57 michmichmachine kernel: [    0.001108] last_pfn = 0x80000 max_arch_pfn = 0x400000000
+Aug  9 11:42:57 michmichmachine kernel: [    0.001121] MTRR default type: uncachable
+Aug  9 11:42:57 michmichmachine kernel: [    0.001122] MTRR fixed ranges enabled:
+Aug  9 11:42:57 michmichmachine kernel: [    0.001122]   00000-9FFFF write-back
+Aug  9 11:42:57 michmichmachine kernel: [    0.001123]   A0000-BFFFF uncachable
+Aug  9 11:42:57 michmichmachine kernel: [    0.001124]   C0000-CBFFF write-protect
+Aug  9 11:42:57 michmichmachine kernel: [    0.001124]   CC000-EFFFF uncachable
+Aug  9 11:42:57 michmichmachine kernel: [    0.001125]   F0000-FFFFF write-protect
+Aug  9 11:42:57 michmichmachine kernel: [    0.001125] MTRR variable ranges enabled:
+Aug  9 11:42:57 michmichmachine kernel: [    0.001126]   0 base 000000000000 mask 1FFF80000000 write-back
+Aug  9 11:42:57 michmichmachine kernel: [    0.001127]   1 base 000080000000 mask 1FFF80000000 uncachable
+Aug  9 11:42:57 michmichmachine kernel: [    0.001127]   2 disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.001128]   3 disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.001128]   4 disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.001128]   5 disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.001129]   6 disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.001129]   7 disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.001148] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Aug  9 11:42:57 michmichmachine kernel: [    0.003584] found SMP MP-table at [mem 0x000f6a70-0x000f6a7f]
+Aug  9 11:42:57 michmichmachine kernel: [    0.005987] Using GB pages for direct mapping
+Aug  9 11:42:57 michmichmachine kernel: [    0.006147] RAMDISK: [mem 0x3302f000-0x3580efff]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006150] ACPI: Early table checksum verification disabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.006154] ACPI: RSDP 0x00000000000F6A00 000024 (v02 PTLTD )
+Aug  9 11:42:57 michmichmachine kernel: [    0.006158] ACPI: XSDT 0x000000007FEEA683 00005C (v01 INTEL  440BX    06040000 VMW  01324272)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006162] ACPI: FACP 0x000000007FEFEE73 0000F4 (v04 INTEL  440BX    06040000 PTL  000F4240)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006166] ACPI: DSDT 0x000000007FEEB7E9 01368A (v01 PTLTD  Custom   06040000 MSFT 03000001)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006171] ACPI: FACS 0x000000007FEFFFC0 000040
+Aug  9 11:42:57 michmichmachine kernel: [    0.006173] ACPI: FACS 0x000000007FEFFFC0 000040
+Aug  9 11:42:57 michmichmachine kernel: [    0.006175] ACPI: BOOT 0x000000007FEEB7C1 000028 (v01 PTLTD  $SBFTBL$ 06040000  LTP 00000001)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006177] ACPI: APIC 0x000000007FEEB07F 000742 (v01 PTLTD  ? APIC   06040000  LTP 00000000)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006179] ACPI: MCFG 0x000000007FEEB043 00003C (v01 PTLTD  $PCITBL$ 06040000  LTP 00000001)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006181] ACPI: SRAT 0x000000007FEEA77F 000880 (v02 VMWARE MEMPLUG  06040000 VMW  00000001)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006182] ACPI: HPET 0x000000007FEEA747 000038 (v01 VMWARE VMW HPET 06040000 VMW  00000001)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006184] ACPI: WAET 0x000000007FEEA71F 000028 (v01 VMWARE VMW WAET 06040000 VMW  00000001)
+Aug  9 11:42:57 michmichmachine kernel: [    0.006186] ACPI: Reserving FACP table memory at [mem 0x7fefee73-0x7fefef66]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006187] ACPI: Reserving DSDT table memory at [mem 0x7feeb7e9-0x7fefee72]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006187] ACPI: Reserving FACS table memory at [mem 0x7fefffc0-0x7fefffff]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006188] ACPI: Reserving FACS table memory at [mem 0x7fefffc0-0x7fefffff]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006188] ACPI: Reserving BOOT table memory at [mem 0x7feeb7c1-0x7feeb7e8]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006189] ACPI: Reserving APIC table memory at [mem 0x7feeb07f-0x7feeb7c0]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006189] ACPI: Reserving MCFG table memory at [mem 0x7feeb043-0x7feeb07e]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006190] ACPI: Reserving SRAT table memory at [mem 0x7feea77f-0x7feeaffe]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006190] ACPI: Reserving HPET table memory at [mem 0x7feea747-0x7feea77e]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006191] ACPI: Reserving WAET table memory at [mem 0x7feea71f-0x7feea746]
+Aug  9 11:42:57 michmichmachine kernel: [    0.006211] ACPI: Local APIC address 0xfee00000
+Aug  9 11:42:57 michmichmachine kernel: [    0.006214] system APIC only can use physical flat
+ 0.836144] Segment Routing with IPv6
+Aug  9 11:42:57 michmichmachine kernel: [    0.836169] mip6: Mobile IPv6
+Aug  9 11:42:57 michmichmachine kernel: [    0.836171] NET: Registered protocol family 17
+Aug  9 11:42:57 michmichmachine kernel: [    0.836194] mpls_gso: MPLS GSO support
+Aug  9 11:42:57 michmichmachine kernel: [    0.836295] IPI shorthand broadcast: enabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.836301] sched_clock: Marking stable (830740784, 2560061)->(838385479, -5084634)
+Aug  9 11:42:57 michmichmachine kernel: [    0.836357] registered taskstats version 1
+Aug  9 11:42:57 michmichmachine kernel: [    0.836359] Loading compiled-in X.509 certificates
+Aug  9 11:42:57 michmichmachine kernel: [    0.854361] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+Aug  9 11:42:57 michmichmachine kernel: [    0.854376] Loaded X.509 cert 'Debian Secure Boot Signer 2021 - linux: 4b6ef5abca669825178e052c84667ccbc0531f8c'
+Aug  9 11:42:57 michmichmachine kernel: [    0.854413] zswap: loaded using pool lzo/zbud
+Aug  9 11:42:57 michmichmachine kernel: [    0.854552] Key type ._fscrypt registered
+Aug  9 11:42:57 michmichmachine kernel: [    0.854553] Key type .fscrypt registered
+Aug  9 11:42:57 michmichmachine kernel: [    0.854553] Key type fscrypt-provisioning registered
+Aug  9 11:42:57 michmichmachine kernel: [    0.854581] AppArmor: AppArmor sha1 policy hashing enabled
+Aug  9 11:42:57 michmichmachine kernel: [    0.856372] Freeing unused kernel image (initmem) memory: 2424K
+Aug  9 11:42:57 michmichmachine kernel: [    0.865477] Write protecting the kernel read-only data: 22528k
+Aug  9 11:42:57 michmichmachine kernel: [    0.866236] Freeing unused kernel image (text/rodata gap) memory: 2040K
+Aug  9 11:42:57 michmichmachine kernel: [    0.866451] Freeing unused kernel image (rodata/data gap) memory: 624K
+Aug  9 11:42:57 michmichmachine kernel: [    0.895796] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug  9 11:42:57 michmichmachine kernel: [    0.895821] Run /init as init process
+Aug  9 11:42:57 michmichmachine kernel: [    0.895822]   with arguments:
+Aug  9 11:42:57 michmichmachine kernel: [    0.895823]     /init
+Aug  9 11:42:57 michmichmachine kernel: [    0.895823]   with environment:
+Aug  9 11:42:57 michmichmachine kernel: [    0.895823]     HOME=/
+Aug  9 11:42:57 michmichmachine kernel: [    0.895824]     TERM=linux
+Aug  9 11:42:57 michmichmachine kernel: [    0.895824]     BOOT_IMAGE=/boot/vmlinuz-5.10.0-16-amd64
+Aug  9 11:42:57 michmichmachine kernel: [    0.969264] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+Aug  9 11:42:57 michmichmachine kernel: [    0.981498] ACPI: Power Button [PWRF]
+Aug  9 11:42:57 michmichmachine kernel: [    1.022343] piix4_smbus 0000:00:07.3: SMBus Host Controller not enabled!
+Aug  9 11:42:57 michmichmachine kernel: [    1.044961] e1000: Intel(R) PRO/1000 Network Driver
+Aug  9 11:42:57 michmichmachine kernel: [    1.044963] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Aug  9 11:42:57 michmichmachine kernel: [    1.056071] ACPI: bus type USB registered
+Aug  9 11:42:57 michmichmachine kernel: [    1.056097] usbcore: registered new interface driver usbfs
+Aug  9 11:42:57 michmichmachine kernel: [    1.056101] usbcore: registered new interface driver hub
+Aug  9 11:42:57 michmichmachine kernel: [    1.056150] usbcore: registered new device driver usb
+Aug  9 11:42:57 michmichmachine kernel: [    1.065133] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Aug  9 11:42:57 michmichmachine kernel: [    1.070636] SCSI subsystem initialized
+Aug  9 11:42:57 michmichmachine kernel: [    1.073548] Fusion MPT base driver 3.04.20
+Aug  9 11:42:57 michmichmachine kernel: [    1.073549] Copyright (c) 1999-2008 LSI Corporation
+Aug  9 11:42:57 michmichmachine kernel: [    1.080169] Fusion MPT SPI Host driver 3.04.20
+Aug  9 11:42:57 michmichmachine kernel: [    1.081847] ehci-pci: EHCI PCI platform driver
+Aug  9 11:42:57 michmichmachine kernel: [    1.082199] ehci-pci 0000:02:03.0: EHCI Host Controller
+Aug  9 11:42:57 michmichmachine kernel: [    1.082206] ehci-pci 0000:02:03.0: new USB bus registered, assigned bus number 1
+Aug  9 11:42:57 michmichmachine kernel: [    1.082358] ehci-pci 0000:02:03.0: cache line size of 64 is not supported
+Aug  9 11:42:57 michmichmachine kernel: [    1.082384] ehci-pci 0000:02:03.0: irq 17, io mem 0xfd5ef000
+Aug  9 11:42:57 michmichmachine kernel: [    1.097449] ehci-pci 0000:02:03.0: USB 2.0 started, EHCI 1.00
+Aug  9 11:42:57 michmichmachine kernel: [    1.097507] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Aug  9 11:42:57 michmichmachine kernel: [    1.097508] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug  9 11:42:57 michmichmachine kernel: [    1.097509] usb usb1: Product: EHCI Host Controller
+Aug  9 11:42:57 michmichmachine kernel: [    1.097509] usb usb1: Manufacturer: Linux 5.10.0-16-amd64 ehci_hcd
+Aug  9 11:42:57 michmichmachine kernel: [    1.097510] usb usb1: SerialNumber: 0000:02:03.0
+Aug  9 11:42:57 michmichmachine kernel: [    1.097586] hub 1-0:1.0: USB hub found
+Aug  9 11:42:57 michmichmachine kernel: [    1.097589] hub 1-0:1.0: 6 ports detected
+Aug  9 11:42:57 michmichmachine kernel: [    1.101524] mptbase: ioc0: Initiating bringup
+Aug  9 11:42:57 michmichmachine kernel: [    1.101944] uhci_hcd: USB Universal Host Controller Interface driver
+Aug  9 11:42:57 michmichmachine kernel: [    1.102285] uhci_hcd 0000:02:00.0: UHCI Host Controller
+Aug  9 11:42:57 michmichmachine kernel: [    1.102290] uhci_hcd 0000:02:00.0: new USB bus registered, assigned bus number 2
+Aug  9 11:42:57 michmichmachine kernel: [    1.102325] uhci_hcd 0000:02:00.0: detected 2 ports
+Aug  9 11:42:57 michmichmachine kernel: [    1.102489] uhci_hcd 0000:02:00.0: irq 18, io base 0x00002080
+Aug  9 11:42:57 michmichmachine kernel: [    1.102924] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+Aug  9 11:42:57 michmichmachine kernel: [    1.103097] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+Aug  9 11:42:57 michmichmachine kernel: [    1.109920] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+Aug  9 11:42:57 michmichmachine kernel: [    1.109922] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug  9 11:42:57 michmichmachine kernel: [    1.109923] usb usb2: Product: UHCI Host Controller
+Aug  9 11:42:57 michmichmachine kernel: [    1.109923] usb usb2: Manufacturer: Linux 5.10.0-16-amd64 uhci_hcd
+Aug  9 11:42:57 michmichmachine kernel: [    1.109924] usb usb2: SerialNumber: 0000:02:00.0
+Aug  9 11:42:57 michmichmachine kernel: [    1.110099] hub 2-0:1.0: USB hub found
+Aug  9 11:42:57 michmichmachine kernel: [    1.110161] hub 2-0:1.0: 2 ports detected
+Aug  9 11:42:57 michmichmachine kernel: [    1.139313] libata version 3.00 loaded.
+Aug  9 11:42:57 michmichmachine kernel: [    1.140187] ata_piix 0000:00:07.1: version 2.13
+Aug  9 11:42:57 michmichmachine kernel: [    1.149326] scsi host0: ata_piix
+Aug  9 11:42:57 michmichmachine kernel: [    1.157790] scsi host1: ata_piix
+Aug  9 11:42:57 michmichmachine kernel: [    1.157861] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x1060 irq 14
+Aug  9 11:42:57 michmichmachine kernel: [    1.157862] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x1068 irq 15
+Aug  9 11:42:57 michmichmachine kernel: [    1.210743] ioc0: LSI53C1030 B0: Capabilities={Initiator}
+Aug  9 11:42:57 michmichmachine kernel: [    1.334001] ata2.00: ATAPI: VMware Virtual IDE CDROM Drive, 00000001, max UDMA/33
+Aug  9 11:42:57 michmichmachine kernel: [    1.351878] scsi 1:0:0:0: CD-ROM            NECVMWar VMware IDE CDR10 1.00 PQ: 0 ANSI: 5
+Aug  9 11:42:57 michmichmachine kernel: [    1.356498] usb 2-1: new full-speed USB device number 2 using uhci_hcd
+Aug  9 11:42:57 michmichmachine kernel: [    1.376460] [drm] DMA map mode: Caching DMA mappings.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378177] [drm] Capabilities:
+Aug  9 11:42:57 michmichmachine kernel: [    1.378178] [drm]   Rect copy.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378179] [drm]   Cursor.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378179] [drm]   Cursor bypass.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378179] [drm]   Cursor bypass 2.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378179] [drm]   8bit emulation.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378180] [drm]   Alpha cursor.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378180] [drm]   Extended Fifo.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378180] [drm]   Multimon.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378180] [drm]   Pitchlock.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378181] [drm]   Irq mask.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378181] [drm]   Display Topology.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378181] [drm]   GMR.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378181] [drm]   Traces.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378181] [drm]   GMR2.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378182] [drm]   Screen Object 2.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378182] [drm]   Command Buffers.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378182] [drm]   Command Buffers 2.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378182] [drm]   Guest Backed Resources.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378183] [drm]   DX Features.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378183] [drm]   HP Command Queue.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378183] [drm] Capabilities2:
+Aug  9 11:42:57 michmichmachine kernel: [    1.378183] [drm]   Grow oTable.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378183] [drm]   IntraSurface copy.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378184] [drm]   DX3.
+Aug  9 11:42:57 michmichmachine kernel: [    1.378185] [drm] Max GMR ids is 64
+Aug  9 11:42:57 michmichmachine kernel: [    1.378186] [drm] Max number of GMR pages is 65536
+Aug  9 11:42:57 michmichmachine kernel: [    1.378186] [drm] Max dedicated hypervisor surface memory is 0 kiB
+Aug  9 11:42:57 michmichmachine kernel: [    1.378186] [drm] Maximum display memory size is 262144 kiB
+Aug  9 11:42:57 michmichmachine kernel: [    1.378187] [drm] VRAM at 0xe8000000 size is 131072 kiB
+Aug  9 11:42:57 michmichmachine kernel: [    1.378187] [drm] MMIO at 0xfe000000 size is 256 kiB
+Aug  9 11:42:57 michmichmachine kernel: [    1.386980] [TTM] Zone  kernel: Available graphics memory: 998160 KiB
+Aug  9 11:42:57 michmichmachine kernel: [    1.386982] [TTM] Initializing pool allocator
+Aug  9 11:42:57 michmichmachine kernel: [    1.386985] [TTM] Initializing DMA pool allocator
+Aug  9 11:42:57 michmichmachine kernel: [    1.409070] sr 1:0:0:0: [sr0] scsi3-mmc drive: 1x/1x writer dvd-ram cd/rw xa/form2 cdda tray
+Aug  9 11:42:57 michmichmachine kernel: [    1.409074] cdrom: Uniform CD-ROM driver Revision: 3.20
+Aug  9 11:42:57 michmichmachine kernel: [    1.417924] [drm] Screen Target Display device initialized
+Aug  9 11:42:57 michmichmachine kernel: [    1.418090] [drm] width 640
+Aug  9 11:42:57 michmichmachine kernel: [    1.418093] [drm] height 480
+Aug  9 11:42:57 michmichmachine kernel: [    1.418097] [drm] bpp 32
+Aug  9 11:42:57 michmichmachine kernel: [    1.441525] [drm] Fifo max 0x00040000 min 0x00001000 cap 0x0000077f
+Aug  9 11:42:57 michmichmachine kernel: [    1.474264] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Aug  9 11:42:57 michmichmachine kernel: [    1.475096] scsi host2: ioc0: LSI53C1030 B0, FwRev=01032920h, Ports=1, MaxQ=128, IRQ=17
+Aug  9 11:42:57 michmichmachine kernel: [    1.489165] [drm] Using command buffers with DMA pool.
+Aug  9 11:42:57 michmichmachine kernel: [    1.489172] [drm] Atomic: yes.
+Aug  9 11:42:57 michmichmachine kernel: [    1.522729] fbcon: svgadrmfb (fb0) is primary device
+Aug  9 11:42:57 michmichmachine kernel: [    1.524493] Console: switching to colour frame buffer device 100x37
+Aug  9 11:42:57 michmichmachine kernel: [    1.532143] [drm] Initialized vmwgfx 2.18.0 20200114 for 0000:00:0f.0 on minor 0
+Aug  9 11:42:57 michmichmachine kernel: [    1.549536] usb 2-1: New USB device found, idVendor=0e0f, idProduct=0003, bcdDevice= 1.03
+Aug  9 11:42:57 michmichmachine kernel: [    1.549541] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug  9 11:42:57 michmichmachine kernel: [    1.549543] usb 2-1: Product: VMware Virtual USB Mouse
+Aug  9 11:42:57 michmichmachine kernel: [    1.549544] usb 2-1: Manufacturer: VMware
+Aug  9 11:42:57 michmichmachine kernel: [    1.566222] hid: raw HID events driver (C) Jiri Kosina
+Aug  9 11:42:57 michmichmachine kernel: [    1.575990] e1000 0000:02:01.0 eth0: (PCI:66MHz:32-bit) 00:0c:29:37:f2:9c
+Aug  9 11:42:57 michmichmachine kernel: [    1.575995] e1000 0000:02:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Aug  9 11:42:57 michmichmachine kernel: [    1.577618] e1000 0000:02:01.0 ens33: renamed from eth0
+Aug  9 11:42:57 michmichmachine kernel: [    1.579460] usbcore: registered new interface driver usbhid
+Aug  9 11:42:57 michmichmachine kernel: [    1.579462] usbhid: USB HID core driver
+Aug  9 11:42:57 michmichmachine kernel: [    1.580590] input: VMware VMware Virtual USB Mouse as /devices/pci0000:00/0000:00:11.0/0000:02:00.0/usb2/2-1/2-1:1.0/0003:0E0F:0003.0001/input/input5
+Aug  9 11:42:57 michmichmachine kernel: [    1.580674] hid-generic 0003:0E0F:0003.0001: input,hidraw0: USB HID v1.10 Mouse [VMware VMware Virtual USB Mouse] on usb-0000:02:00.0-1/input0
+Aug  9 11:42:57 michmichmachine kernel: [    1.661998] scsi 2:0:0:0: Direct-Access     VMware,  VMware Virtual S 1.0  PQ: 0 ANSI: 2
+Aug  9 11:42:57 michmichmachine kernel: [    1.662012] scsi target2:0:0: Beginning Domain Validation
+Aug  9 11:42:57 michmichmachine kernel: [    1.663039] scsi target2:0:0: Domain Validation skipping write tests
+Aug  9 11:42:57 michmichmachine kernel: [    1.663041] scsi target2:0:0: Ending Domain Validation
+Aug  9 11:42:57 michmichmachine kernel: [    1.663063] scsi target2:0:0: FAST-40 WIDE SCSI 80.0 MB/s ST (25 ns, offset 127)
+Aug  9 11:42:57 michmichmachine kernel: [    1.669981] sd 2:0:0:0: [sda] 41943040 512-byte logical blocks: (21.5 GB/20.0 GiB)
+Aug  9 11:42:57 michmichmachine kernel: [    1.670001] sd 2:0:0:0: [sda] Write Protect is off
+Aug  9 11:42:57 michmichmachine kernel: [    1.670003] sd 2:0:0:0: [sda] Mode Sense: 61 00 00 00
+Aug  9 11:42:57 michmichmachine kernel: [    1.670042] sd 2:0:0:0: [sda] Cache data unavailable
+Aug  9 11:42:57 michmichmachine kernel: [    1.670043] sd 2:0:0:0: [sda] Assuming drive cache: write through
+Aug  9 11:42:57 michmichmachine kernel: [    1.670934]  sda: sda1 sda2 < sda5 >
+Aug  9 11:42:57 michmichmachine kernel: [    1.677989] sd 2:0:0:0: [sda] Attached SCSI disk
+Aug  9 11:42:57 michmichmachine kernel: [    1.693372] usb 2-2: new full-speed USB device number 3 using uhci_hcd
+Aug  9 11:42:57 michmichmachine kernel: [    1.718794] PM: Image not found (code -22)
+Aug  9 11:42:57 michmichmachine kernel: [    1.786071] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+Aug  9 11:42:57 michmichmachine kernel: [    1.809656] tsc: Refined TSC clocksource calibration: 1696.816 MHz
+Aug  9 11:42:57 michmichmachine kernel: [    1.809698] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x18756786474, max_idle_ns: 440795255376 ns
+Aug  9 11:42:57 michmichmachine kernel: [    1.809844] clocksource: Switched to clocksource tsc
+Aug  9 11:42:57 michmichmachine kernel: [    1.815110] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+Aug  9 11:42:57 michmichmachine kernel: [    1.851237] usb 2-2: New USB device found, idVendor=0e0f, idProduct=0002, bcdDevice= 1.00
+Aug  9 11:42:57 michmichmachine kernel: [    1.851240] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug  9 11:42:57 michmichmachine kernel: [    1.851242] usb 2-2: Product: VMware Virtual USB Hub
+Aug  9 11:42:57 michmichmachine kernel: [    1.851242] usb 2-2: Manufacturer: VMware, Inc.
+Aug  9 11:42:57 michmichmachine kernel: [    1.857308] hub 2-2:1.0: USB hub found
+Aug  9 11:42:57 michmichmachine kernel: [    1.859405] hub 2-2:1.0: 7 ports detected
+Aug  9 11:42:57 michmichmachine kernel: [    2.077064] fuse: init (API version 7.32)
+Aug  9 11:42:57 michmichmachine kernel: [    2.104010] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+Aug  9 11:42:57 michmichmachine kernel: [    2.155006] lp: driver loaded but no devices found
+Aug  9 11:42:57 michmichmachine kernel: [    2.164655] ppdev: user-space parallel port driver
+Aug  9 11:42:57 michmichmachine kernel: [    2.165164] usb 2-2.1: new full-speed USB device number 4 using uhci_hcd
+Aug  9 11:42:57 michmichmachine kernel: [    2.289898] usb 2-2.1: New USB device found, idVendor=0e0f, idProduct=0008, bcdDevice= 1.00
+Aug  9 11:42:57 michmichmachine kernel: [    2.289902] usb 2-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Aug  9 11:42:57 michmichmachine kernel: [    2.289903] usb 2-2.1: Product: Virtual Bluetooth Adapter
+Aug  9 11:42:57 michmichmachine kernel: [    2.289904] usb 2-2.1: Manufacturer: VMware
+Aug  9 11:42:57 michmichmachine kernel: [    2.289904] usb 2-2.1: SerialNumber: 000650268328
+Aug  9 11:42:57 michmichmachine kernel: [    2.637713] ACPI: AC Adapter [ACAD] (on-line)
+Aug  9 11:42:57 michmichmachine kernel: [    2.737197] cryptd: max_cpu_qlen set to 1000
+Aug  9 11:42:57 michmichmachine kernel: [    2.800348] AVX2 version of gcm_enc/dec engaged.
+Aug  9 11:42:57 michmichmachine kernel: [    2.800351] AES CTR mode by8 optimization enabled
+Aug  9 11:42:57 michmichmachine kernel: [    2.972817] vmw_vmci 0000:00:07.7: Found VMCI PCI device at 0x11080, irq 16
+Aug  9 11:42:57 michmichmachine kernel: [    2.983798] sr 1:0:0:0: Attached scsi generic sg0 type 5
+Aug  9 11:42:57 michmichmachine kernel: [    2.984031] vmw_vmci 0000:00:07.7: Using capabilities 0x1c
+Aug  9 11:42:57 michmichmachine kernel: [    2.993761] sd 2:0:0:0: Attached scsi generic sg1 type 0
+Aug  9 11:42:57 michmichmachine kernel: [    2.997649] Guest personality initialized and is active
+Aug  9 11:42:57 michmichmachine kernel: [    2.997689] VMCI host device registered (name=vmci, major=10, minor=61)
+Aug  9 11:42:57 michmichmachine kernel: [    2.997689] Initialized host personality
+Aug  9 11:42:57 michmichmachine kernel: [    3.078985] input: PC Speaker as /devices/platform/pcspkr/input/input6
+Aug  9 11:42:57 michmichmachine kernel: [    3.143746] Adding 998396k swap on /dev/sda5.  Priority:-2 extents:1 across:998396k FS
+Aug  9 11:42:57 michmichmachine kernel: [    3.190873] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Aug  9 11:42:57 michmichmachine kernel: [    3.294966] alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+Aug  9 11:42:57 michmichmachine kernel: [    3.451373] Bluetooth: Core ver 2.22
+Aug  9 11:42:57 michmichmachine kernel: [    3.451420] NET: Registered protocol family 31
+Aug  9 11:42:57 michmichmachine kernel: [    3.451422] Bluetooth: HCI device and connection manager initialized
+Aug  9 11:42:57 michmichmachine kernel: [    3.453688] Bluetooth: HCI socket layer initialized
+Aug  9 11:42:57 michmichmachine kernel: [    3.453692] Bluetooth: L2CAP socket layer initialized
+Aug  9 11:42:57 michmichmachine kernel: [    3.453698] Bluetooth: SCO socket layer initialized
+Aug  9 11:42:57 michmichmachine kernel: [    3.470946] usbcore: registered new interface driver btusb
+Aug  9 11:42:57 michmichmachine kernel: [    7.978677] audit: type=1400 audit(1660038175.644:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-soffice" pid=281 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    7.980217] audit: type=1400 audit(1660038175.644:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-soffice//gpg" pid=281 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.020719] audit: type=1400 audit(1660038175.684:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=468 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.021424] audit: type=1400 audit(1660038175.688:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=468 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.022112] audit: type=1400 audit(1660038175.688:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=468 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.045054] audit: type=1400 audit(1660038175.708:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=469 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.066633] audit: type=1400 audit(1660038175.732:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oopslash" pid=470 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.081426] audit: type=1400 audit(1660038175.748:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-xpdfimport" pid=471 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.097900] audit: type=1400 audit(1660038175.764:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-senddoc" pid=472 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine kernel: [    8.123708] audit: type=1400 audit(1660038175.788:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=473 comm="apparmor_parser"
+Aug  9 11:42:57 michmichmachine systemd-modules-load[242]: Inserted module 'lp'
+Aug  9 11:42:57 michmichmachine systemd-modules-load[242]: Inserted module 'ppdev'
+Aug  9 11:42:57 michmichmachine systemd-modules-load[242]: Inserted module 'parport_pc'
+Aug  9 11:42:57 michmichmachine systemd-modules-load[242]: Inserted module 'msr'
+Aug  9 11:42:57 michmichmachine systemd-sysusers[259]: Creating group systemd-coredump with gid 999.
+Aug  9 11:42:57 michmichmachine systemd-sysusers[259]: Creating user systemd-coredump (systemd Core Dumper) with uid 999 and gid 999.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Flush Journal to Persistent Storage...
+Aug  9 11:42:57 michmichmachine apparmor.systemd[271]: Restarting AppArmor
+Aug  9 11:42:57 michmichmachine apparmor.systemd[271]: Reloading AppArmor profiles
+Aug  9 11:42:57 michmichmachine systemd[1]: Finished Flush Journal to Persistent Storage.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Create Volatile Files and Directories...
+Aug  9 11:42:57 michmichmachine systemd[1]: Finished Create Volatile Files and Directories.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Network Time Synchronization...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Aug  9 11:42:57 michmichmachine systemd[1]: Finished Update UTMP about System Boot/Shutdown.
+Aug  9 11:42:57 michmichmachine systemd[1]: Found device VMware_Virtual_S 5.
+Aug  9 11:42:57 michmichmachine systemd[1]: Activating swap /dev/disk/by-uuid/ce1e6f7a-315f-4be2-b93c-38c9b3e23bd6...
+Aug  9 11:42:57 michmichmachine systemd[1]: Activated swap /dev/disk/by-uuid/ce1e6f7a-315f-4be2-b93c-38c9b3e23bd6.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Swap.
+Aug  9 11:42:57 michmichmachine systemd-udevd[298]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Network Time Synchronization.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target System Time Set.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target System Time Synchronized.
+Aug  9 11:42:57 michmichmachine systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Load/Save RF Kill Switch Status...
+Aug  9 11:42:57 michmichmachine systemd-udevd[295]: Using default interface naming scheme 'v247'.
+Aug  9 11:42:57 michmichmachine systemd-udevd[295]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Load/Save RF Kill Switch Status.
+Aug  9 11:42:57 michmichmachine mtp-probe: checking bus 2, device 2: "/sys/devices/pci0000:00/0000:00:11.0/0000:02:00.0/usb2/2-1"
+Aug  9 11:42:57 michmichmachine mtp-probe: bus: 2, device: 2 was not an MTP device
+Aug  9 11:42:57 michmichmachine systemd-udevd[294]: controlC0: Process '/usr/sbin/alsactl -E HOME=/run/alsa -E XDG_RUNTIME_DIR=/run/alsa/runtime restore 0' failed with exit code 99.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: systemd-rfkill.service: Succeeded.
+Aug  9 11:42:57 michmichmachine systemd[1]: Finished Load AppArmor profiles.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target System Initialization.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started CUPS Scheduler.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Trigger anacron every hour.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Daily apt download activities.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Daily apt upgrade and clean activities.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Discard unused blocks once a week.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Refresh fwupd metadata regularly.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Daily rotation of log files.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Daily man-db regeneration.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Daily Cleanup of Temporary Directories.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Paths.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Timers.
+Aug  9 11:42:57 michmichmachine systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+Aug  9 11:42:57 michmichmachine systemd[1]: Listening on CUPS Scheduler.
+Aug  9 11:42:57 michmichmachine systemd[1]: Listening on D-Bus System Message Bus Socket.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Sockets.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Basic System.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Accounts Service...
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Run anacron jobs.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Bluetooth service...
+Aug  9 11:42:57 michmichmachine anacron[478]: Anacron 2.3 started on 2022-08-09
+Aug  9 11:42:57 michmichmachine anacron[478]: Will run job `cron.daily' in 5 min.
+Aug  9 11:42:57 michmichmachine anacron[478]: Will run job `cron.weekly' in 10 min.
+Aug  9 11:42:57 michmichmachine anacron[478]: Will run job `cron.monthly' in 15 min.
+Aug  9 11:42:57 michmichmachine anacron[478]: Jobs will be executed sequentially
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Regular background program processing daemon.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started D-Bus System Message Bus.
+Aug  9 11:42:57 michmichmachine cron[481]: (CRON) INFO (pidfile fd = 3)
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Found user 'avahi' (UID 109) and group 'avahi' (GID 116).
+Aug  9 11:42:57 michmichmachine cron[481]: (CRON) INFO (Running @reboot jobs)
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Network Manager...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Login Prompts.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Raise network interfaces...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Authorization Manager...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting System Logging Service...
+Aug  9 11:42:57 michmichmachine bluetoothd[480]: Bluetooth daemon 5.55
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Switcheroo Control Proxy service...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting User Login Management...
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Disk Manager...
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Authentication service for virtual machines hosted on VMware.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Service for virtual machines hosted on VMware...
+Aug  9 11:42:57 michmichmachine rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2102.0]
+Aug  9 11:42:57 michmichmachine rsyslogd: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="490" x-info="https://www.rsyslog.com"] start
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting WPA supplicant...
+Aug  9 11:42:57 michmichmachine systemd[1]: Started System Logging Service.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Successfully dropped root privileges.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: avahi-daemon 0.8 starting up.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Service for virtual machines hosted on VMware.
+Aug  9 11:42:57 michmichmachine udisksd[498]: udisks daemon version 2.9.2 starting
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: Pref_Init: Using '/etc/vmware-tools/vgauth.conf' as preferences filepath
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: Core dump limit set to -1
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: INIT SERVICE
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Bluetooth service.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Bluetooth.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+Aug  9 11:42:57 michmichmachine wpa_supplicant[504]: Successfully initialized wpa_supplicant
+Aug  9 11:42:57 michmichmachine systemd[1]: Started WPA supplicant.
+Aug  9 11:42:57 michmichmachine kernel: [   10.143939] NET: Registered protocol family 40
+Aug  9 11:42:57 michmichmachine bluetoothd[480]: Starting SDP server
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Successfully called chroot().
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Successfully dropped remaining capabilities.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: No service file found in /etc/avahi/services.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Joining mDNS multicast group on interface lo.IPv6 with address ::1.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: New relevant interface lo.IPv6 for mDNS.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Joining mDNS multicast group on interface lo.IPv4 with address 127.0.0.1.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: New relevant interface lo.IPv4 for mDNS.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Network interface enumeration completed.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Registering new address record for ::1 on lo.*.
+Aug  9 11:42:57 michmichmachine avahi-daemon[479]: Registering new address record for 127.0.0.1 on lo.IPv4.
+Aug  9 11:42:57 michmichmachine polkitd[488]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Switcheroo Control Proxy service.
+Aug  9 11:42:57 michmichmachine systemd[1]: Condition check resulted in Manage Sound Card State (restore and store) being skipped.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Save/Restore Sound Card State...
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Authorization Manager.
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Modem Manager...
+Aug  9 11:42:57 michmichmachine accounts-daemon[477]: started daemon version 0.6.55
+Aug  9 11:42:57 michmichmachine alsactl[538]: /usr/sbin/alsactl: load_state:1683: Cannot open /var/lib/alsa/asound.state for reading: No such file or directory
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Accounts Service.
+Aug  9 11:42:57 michmichmachine NetworkManager[484]: <info>  [1660038177.8711] NetworkManager (version 1.30.6) is starting... (for the first time)
+Aug  9 11:42:57 michmichmachine NetworkManager[484]: <info>  [1660038177.8757] Read config: /etc/NetworkManager/NetworkManager.conf (lib: no-mac-addr-change.conf)
+Aug  9 11:42:57 michmichmachine alsactl[538]: alsa-lib main.c:1014:(snd_use_case_mgr_open) error: failed to import hw:0 use case configuration -2
+Aug  9 11:42:57 michmichmachine kernel: [   10.216489] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Aug  9 11:42:57 michmichmachine kernel: [   10.216492] Bluetooth: BNEP filters: protocol multicast
+Aug  9 11:42:57 michmichmachine kernel: [   10.216496] Bluetooth: BNEP socket layer initialized
+Aug  9 11:42:57 michmichmachine bluetoothd[480]: Bluetooth management interface 1.18 initialized
+Aug  9 11:42:57 michmichmachine bluetoothd[480]: profiles/sap/server.c:sap_server_register() Sap driver initialization failed.
+Aug  9 11:42:57 michmichmachine bluetoothd[480]: sap-server: Operation not permitted (1)
+Aug  9 11:42:57 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.2' (uid=0 pid=480 comm="/usr/libexec/bluetooth/bluetoothd ")
+Aug  9 11:42:57 michmichmachine systemd[1]: Starting Hostname Service...
+Aug  9 11:42:57 michmichmachine systemd[1]: Started Network Manager.
+Aug  9 11:42:57 michmichmachine NetworkManager[484]: <info>  [1660038177.8996] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Aug  9 11:42:57 michmichmachine udisksd[498]: failed to load module mdraid: libbd_mdraid.so.2: cannot open shared object file: No such file or directory
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: Using '/var/lib/vmware/VGAuth/aliasStore' for alias store root directory
+Aug  9 11:42:57 michmichmachine NetworkManager[484]: <info>  [1660038177.9421] manager[0x55ed0ce62040]: monitoring kernel firmware directory '/lib/firmware'.
+Aug  9 11:42:57 michmichmachine NetworkManager[484]: <info>  [1660038177.9424] monitoring ifupdown state file '/run/network/ifstate'.
+Aug  9 11:42:57 michmichmachine alsactl[538]: Found hardware: "ENS1371" "Cirrus Logic CS4297A rev 3" "AC97a:43525913" "0x1274" "0x1371"
+Aug  9 11:42:57 michmichmachine alsactl[538]: Hardware is initialized using a generic method
+Aug  9 11:42:57 michmichmachine systemd[1]: Finished Save/Restore Sound Card State.
+Aug  9 11:42:57 michmichmachine systemd[1]: Reached target Sound Card.
+Aug  9 11:42:57 michmichmachine systemd[1]: Started User Login Management.
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: LoadCatalogAndSchema: Using '/etc/vmware-tools/vgauth/schemas' for SAML schemas
+Aug  9 11:42:57 michmichmachine udisksd[498]: Failed to load the 'mdraid' libblockdev plugin
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: LoadPrefs: Allowing 300 of clock skew for SAML date validation
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: SAML_Init: Using xmlsec1 1.2.31 for XML signature support
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: ServiceNetworkCreateSocketDir: Created socket directory '/var/run/vmware'
+Aug  9 11:42:57 michmichmachine VGAuthService[499]: BEGIN SERVICE
+Aug  9 11:42:57 michmichmachine ModemManager[541]: <info>  ModemManager (version 1.14.12) starting in system bus...
+Aug  9 11:42:58 michmichmachine systemd[1]: Finished Raise network interfaces.
+Aug  9 11:42:58 michmichmachine systemd[1]: Reached target Network.
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting CUPS Scheduler...
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting Permit User Sessions...
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Unattended Upgrades Shutdown.
+Aug  9 11:42:58 michmichmachine udisksd[498]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to '/dev/sr0': ATA command failed: error=0x01 count=0x02 status=0x50 (g-io-error-quark, 0)
+Aug  9 11:42:58 michmichmachine systemd[1]: Finished Permit User Sessions.
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting GNOME Display Manager...
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting Hold until boot process finishes up...
+Aug  9 11:42:58 michmichmachine systemd[1]: Started CUPS Scheduler.
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Make remote CUPS printers available locally.
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Disk Manager.
+Aug  9 11:42:58 michmichmachine udisksd[498]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Aug  9 11:42:58 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Hostname Service.
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2070] hostname: hostname: using hostnamed
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2070] hostname: hostname changed from (none) to "michmichmachine"
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2072] dns-mgr[0x55ed0ce57170]: init: dns=default,systemd-resolved rc-manager=symlink (auto)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2076] manager[0x55ed0ce62040]: rfkill: Wi-Fi hardware radio set enabled
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2077] manager[0x55ed0ce62040]: rfkill: WWAN hardware radio set enabled
+Aug  9 11:42:58 michmichmachine systemd[1]: Started GNOME Display Manager.
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Modem Manager.
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2541] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.30.6/libnm-device-plugin-wwan.so)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2625] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/1.30.6/libnm-device-plugin-bluetooth.so)
+Aug  9 11:42:58 michmichmachine systemd[1]: Received SIGRTMIN+21 from PID 172 (plymouthd).
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2767] Loaded device plugin: NMTeamFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.30.6/libnm-device-plugin-team.so)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2818] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/1.30.6/libnm-device-plugin-adsl.so)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2953] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.30.6/libnm-device-plugin-wifi.so)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2962] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2967] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.2970] manager: Networking is enabled by state file
+Aug  9 11:42:58 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.9' (uid=0 pid=484 comm="/usr/sbin/NetworkManager --no-daemon ")
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting Network Manager Script Dispatcher Service...
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3109] dhcp-init: Using DHCP client 'internal'
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3136] settings: Loaded settings plugin: ifupdown ("/usr/lib/x86_64-linux-gnu/NetworkManager/1.30.6/libnm-settings-plugin-ifupdown.so")
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3140] settings: Loaded settings plugin: keyfile (internal)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3145] ifupdown: management mode: unmanaged
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3147] ifupdown:       interface-parser: parsing file /etc/network/interfaces
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3149] ifupdown:       interface-parser: source line includes interfaces file(s) /etc/network/interfaces.d/*
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <warn>  [1660038178.3150] ifupdown: interfaces file /etc/network/interfaces.d/* doesn't exist
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3151] ifupdown:       interface-parser: finished parsing file /etc/network/interfaces
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3318] device (lo): carrier: link connected
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3361] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3449] manager: (ens33): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3511] device (ens33): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Aug  9 11:42:58 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Network Manager Script Dispatcher Service.
+Aug  9 11:42:58 michmichmachine kernel: [   10.694221] e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Aug  9 11:42:58 michmichmachine kernel: [   10.699812] IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.3779] device (ens33): carrier: link connected
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4122] modem-manager: ModemManager available
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4164] device (ens33): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4307] policy: auto-activating connection 'Wired connection 1' (352fb69c-f3b5-43ed-b91d-957d2785dfd8)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4355] device (ens33): Activation: starting connection 'Wired connection 1' (352fb69c-f3b5-43ed-b91d-957d2785dfd8)
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4360] device (ens33): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4415] manager: NetworkManager state is now CONNECTING
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4427] device (ens33): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4526] device (ens33): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:58 michmichmachine NetworkManager[484]: <info>  [1660038178.4535] dhcp4 (ens33): activation: beginning transaction (timeout in 45 seconds)
+Aug  9 11:42:58 michmichmachine avahi-daemon[479]: Joining mDNS multicast group on interface ens33.IPv6 with address fe80::20c:29ff:fe37:f29c.
+Aug  9 11:42:58 michmichmachine avahi-daemon[479]: New relevant interface ens33.IPv6 for mDNS.
+Aug  9 11:42:58 michmichmachine avahi-daemon[479]: Registering new address record for fe80::20c:29ff:fe37:f29c on ens33.*.
+Aug  9 11:42:58 michmichmachine systemd[1]: Created slice User Slice of UID 115.
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting User Runtime Directory /run/user/115...
+Aug  9 11:42:58 michmichmachine systemd[1]: Finished User Runtime Directory /run/user/115.
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting User Manager for UID 115...
+Aug  9 11:42:58 michmichmachine systemd[600]: Queued start job for default target Main User Target.
+Aug  9 11:42:58 michmichmachine systemd[600]: Created slice User Application Slice.
+Aug  9 11:42:58 michmichmachine systemd[600]: Reached target Paths.
+Aug  9 11:42:58 michmichmachine systemd[600]: Reached target Timers.
+Aug  9 11:42:58 michmichmachine systemd[600]: Starting D-Bus User Message Bus Socket.
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on GnuPG network certificate management daemon.
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on GnuPG cryptographic agent and passphrase cache.
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on Multimedia System.
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on debconf communication socket.
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on Sound System.
+Aug  9 11:42:58 michmichmachine systemd[600]: Listening on D-Bus User Message Bus Socket.
+Aug  9 11:42:58 michmichmachine systemd[600]: Reached target Sockets.
+Aug  9 11:42:58 michmichmachine systemd[600]: Reached target Basic System.
+Aug  9 11:42:58 michmichmachine systemd[1]: Started User Manager for UID 115.
+Aug  9 11:42:58 michmichmachine systemd[1]: Started Session c1 of user Debian-gdm.
+Aug  9 11:42:58 michmichmachine systemd[600]: Started Multimedia Service.
+Aug  9 11:42:58 michmichmachine systemd[600]: Starting Sound Service...
+Aug  9 11:42:58 michmichmachine systemd[600]: Starting Tracker metadata extractor...
+Aug  9 11:42:58 michmichmachine systemd[600]: Starting Tracker file system data miner...
+Aug  9 11:42:58 michmichmachine systemd[600]: Started D-Bus User Message Bus.
+Aug  9 11:42:58 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.23' (uid=115 pid=634 comm="/usr/bin/pipewire ")
+Aug  9 11:42:58 michmichmachine systemd[1]: Starting RealtimeKit Scheduling Policy Service...
+Aug  9 11:42:58 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+Aug  9 11:42:58 michmichmachine systemd[1]: Started RealtimeKit Scheduling Policy Service.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully called chroot.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully dropped privileges.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully limited resources.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Running.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Canary thread running.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Watchdog thread running.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully made thread 634 of process 634 owned by '115' high priority at nice level -11.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 1 threads of 1 processes of 1 users.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 1 threads of 1 processes of 1 users.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 1 threads of 1 processes of 1 users.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully made thread 647 of process 634 owned by '115' RT at priority 20.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 2 threads of 1 processes of 1 users.
+Aug  9 11:42:58 michmichmachine tracker-miner-f[639]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:42:58 michmichmachine tracker-extract[638]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:42:58 michmichmachine pipewire[634]: Failed to receive portal pid: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get PID of name 'org.freedesktop.portal.Desktop': no such name
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully made thread 636 of process 636 owned by '115' high priority at nice level -11.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 3 threads of 2 processes of 1 users.
+Aug  9 11:42:58 michmichmachine tracker-extract[638]: Setting priority nice level to 19
+Aug  9 11:42:58 michmichmachine tracker-miner-f[639]: Setting priority nice level to 19
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully made thread 661 of process 661 owned by '115' high priority at nice level -11.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 4 threads of 3 processes of 1 users.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 4 threads of 3 processes of 1 users.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 4 threads of 3 processes of 1 users.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Successfully made thread 666 of process 661 owned by '115' RT at priority 20.
+Aug  9 11:42:58 michmichmachine rtkit-daemon[649]: Supervising 5 threads of 3 processes of 1 users.
+Aug  9 11:42:59 michmichmachine pulseaudio[636]: Disabling timer-based scheduling because running inside a VM.
+Aug  9 11:42:59 michmichmachine rtkit-daemon[649]: Supervising 5 threads of 3 processes of 1 users.
+Aug  9 11:42:59 michmichmachine rtkit-daemon[649]: Successfully made thread 670 of process 636 owned by '115' RT at priority 5.
+Aug  9 11:42:59 michmichmachine rtkit-daemon[649]: Supervising 6 threads of 3 processes of 1 users.
+Aug  9 11:42:59 michmichmachine avahi-daemon[479]: Server startup complete. Host name is michmichmachine.local. Local service cookie is 2171980196.
+Aug  9 11:42:59 michmichmachine pulseaudio[636]: Disabling timer-based scheduling because running inside a VM.
+Aug  9 11:42:59 michmichmachine rtkit-daemon[649]: Supervising 6 threads of 3 processes of 1 users.
+Aug  9 11:42:59 michmichmachine rtkit-daemon[649]: Successfully made thread 671 of process 636 owned by '115' RT at priority 5.
+Aug  9 11:42:59 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8477] dhcp4 (ens33): state changed unknown -> bound, address=10.231.253.135
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8487] device (ens33): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:59 michmichmachine avahi-daemon[479]: Joining mDNS multicast group on interface ens33.IPv4 with address 10.231.253.135.
+Aug  9 11:42:59 michmichmachine avahi-daemon[479]: New relevant interface ens33.IPv4 for mDNS.
+Aug  9 11:42:59 michmichmachine pulseaudio[636]: Failed to open cookie file '/var/lib/gdm3/.config/pulse/cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:42:59 michmichmachine avahi-daemon[479]: Registering new address record for 10.231.253.135 on ens33.IPv4.
+Aug  9 11:42:59 michmichmachine pulseaudio[636]: Failed to load authentication key '/var/lib/gdm3/.config/pulse/cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:42:59 michmichmachine pulseaudio[636]: Failed to open cookie file '/var/lib/gdm3/.pulse-cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:42:59 michmichmachine pulseaudio[636]: Failed to load authentication key '/var/lib/gdm3/.pulse-cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8728] device (ens33): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:59 michmichmachine bluetoothd[480]: Endpoint registered: sender=:1.30 path=/MediaEndpoint/A2DPSink/sbc
+Aug  9 11:42:59 michmichmachine systemd[600]: Started Sound Service.
+Aug  9 11:42:59 michmichmachine bluetoothd[480]: Endpoint registered: sender=:1.30 path=/MediaEndpoint/A2DPSource/sbc
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8797] device (ens33): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8805] manager: NetworkManager state is now CONNECTED_LOCAL
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8844] manager: NetworkManager state is now CONNECTED_SITE
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8846] policy: set 'Wired connection 1' (ens33) as default for IPv4 routing and DNS
+Aug  9 11:42:59 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.9' (uid=0 pid=484 comm="/usr/sbin/NetworkManager --no-daemon ")
+Aug  9 11:42:59 michmichmachine dbus-daemon[482]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.resolve1.service': Unit dbus-org.freedesktop.resolve1.service not found.
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.8977] device (ens33): Activation: successful, device activated.
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.9020] manager: NetworkManager state is now CONNECTED_GLOBAL
+Aug  9 11:42:59 michmichmachine NetworkManager[484]: <info>  [1660038179.9075] manager: startup complete
+Aug  9 11:42:59 michmichmachine kernel: [   12.241664] Bluetooth: RFCOMM TTY layer initialized
+Aug  9 11:42:59 michmichmachine kernel: [   12.241702] Bluetooth: RFCOMM socket layer initialized
+Aug  9 11:42:59 michmichmachine kernel: [   12.241709] Bluetooth: RFCOMM ver 1.11
+Aug  9 11:42:59 michmichmachine gnome-session[667]: gnome-session-binary[667]: WARNING: Failed to upload environment to systemd: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Aug  9 11:42:59 michmichmachine gnome-session-binary[667]: WARNING: Failed to upload environment to systemd: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Aug  9 11:42:59 michmichmachine gnome-session[667]: gnome-session-binary[667]: WARNING: Failed to reset failed state of units: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Aug  9 11:42:59 michmichmachine gnome-session-binary[667]: WARNING: Failed to reset failed state of units: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Aug  9 11:42:59 michmichmachine gnome-session[667]: gnome-session-binary[667]: WARNING: Falling back to non-systemd startup procedure due to error: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Aug  9 11:42:59 michmichmachine gnome-session-binary[667]: WARNING: Falling back to non-systemd startup procedure due to error: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Aug  9 11:43:00 michmichmachine systemd[1]: e2scrub_reap.service: Succeeded.
+Aug  9 11:43:00 michmichmachine systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Virtual filesystem service...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gtk.vfs.Daemon'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Virtual filesystem service.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &DOCUMENTS. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &MUSIC. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &PICTURES. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &VIDEOS. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &DOWNLOAD. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &DOCUMENTS. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &MUSIC. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &PICTURES. Ignoring this location.
+Aug  9 11:43:00 michmichmachine tracker-miner-f[639]: Unable to get XDG user directory path for special directory &VIDEOS. Ignoring this location.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Virtual filesystem service - disk device monitor...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Virtual filesystem service - disk device monitor.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Virtual filesystem service - GNOME Online Accounts monitor...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating service name='org.gnome.OnlineAccounts' requested by ':1.10' (uid=115 pid=755 comm="/usr/libexec/gvfs-goa-volume-monitor ")
+Aug  9 11:43:00 michmichmachine goa-daemon[759]: goa-daemon version 3.38.0 starting
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating service name='org.gnome.Identity' requested by ':1.11' (uid=115 pid=759 comm="/usr/libexec/goa-daemon ")
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gnome.OnlineAccounts'
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Virtual filesystem service - GNOME Online Accounts monitor.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gnome.Identity'
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Virtual filesystem service - digital camera monitor...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Virtual filesystem service - digital camera monitor.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Virtual filesystem service - Apple File Conduit monitor...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Virtual filesystem service - Apple File Conduit monitor.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Virtual filesystem service - Media Transfer Protocol monitor...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Virtual filesystem service - Media Transfer Protocol monitor.
+Aug  9 11:43:00 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.35' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[1]: Starting Daemon for power management...
+Aug  9 11:43:00 michmichmachine org.gnome.Shell.desktop[699]: VMware: No 3D enabled (0, SuccÃ¨s).
+Aug  9 11:43:00 michmichmachine org.gnome.Shell.desktop[699]: libEGL warning: DRI2: failed to create dri screen
+Aug  9 11:43:00 michmichmachine org.gnome.Shell.desktop[699]: VMware: No 3D enabled (0, SuccÃ¨s).
+Aug  9 11:43:00 michmichmachine org.gnome.Shell.desktop[699]: libEGL warning: DRI2: failed to create dri screen
+Aug  9 11:43:00 michmichmachine org.gnome.Shell.desktop[699]: VMware: No 3D enabled (0, SuccÃ¨s).
+Aug  9 11:43:00 michmichmachine gnome-shell[699]: Failed to initialize accelerated iGPU/dGPU framebuffer sharing: Do not want to use software renderer (llvmpipe (LLVM 11.0.1, 256 bits)), falling back to CPU copy path
+Aug  9 11:43:00 michmichmachine gnome-shell[699]: Boot VGA GPU /dev/dri/card0 selected as primary
+Aug  9 11:43:00 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.UPower'
+Aug  9 11:43:00 michmichmachine systemd[1]: Started Daemon for power management.
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:00 michmichmachine systemd[600]: Starting Tracker metadata database store and lookup manager...
+Aug  9 11:43:00 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 11:43:00 michmichmachine systemd[600]: Started Tracker metadata database store and lookup manager.
+Aug  9 11:43:00 michmichmachine gnome-shell[699]: Disabling DMA buffer screen sharing for driver 'vmwgfx'.
+Aug  9 11:43:00 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.a11y.Bus' requested by ':1.10' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:00 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'org.a11y.Bus'
+Aug  9 11:43:00 michmichmachine ModemManager[541]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:11.0/0000:02:01.0': not supported by any plugin
+Aug  9 11:43:01 michmichmachine gnome-shell[699]: Getting parental controls for user 115
+Aug  9 11:43:01 michmichmachine gnome-shell[699]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+Aug  9 11:43:01 michmichmachine gnome-shell[699]: Will monitor session c1
+Aug  9 11:43:01 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.33' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:01 michmichmachine systemd[1]: Starting Locale Service...
+Aug  9 11:43:01 michmichmachine gnome-shell[699]: Called enable_unredirect_for_display while unredirection is enabled.
+Aug  9 11:43:01 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.locale1'
+Aug  9 11:43:01 michmichmachine systemd[1]: Started Locale Service.
+Aug  9 11:43:01 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.freedesktop.portal.IBus' requested by ':1.12' (uid=115 pid=849 comm="ibus-daemon --panel disable ")
+Aug  9 11:43:01 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'org.freedesktop.portal.IBus'
+Aug  9 11:43:01 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.9' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:01 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+Aug  9 11:43:01 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service' requested by ':1.33' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:01 michmichmachine systemd[1]: Starting Location Lookup Service...
+Aug  9 11:43:02 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.33' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:02 michmichmachine systemd[1]: Starting PackageKit Daemon...
+Aug  9 11:43:02 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.GeoClue2'
+Aug  9 11:43:02 michmichmachine systemd[1]: Started Location Lookup Service.
+Aug  9 11:43:02 michmichmachine PackageKit: daemon start
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.gnome.Shell.Notifications' requested by ':1.9' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[821]: dbus-daemon[821]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:02 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Aug  9 11:43:02 michmichmachine systemd[1]: Started PackageKit Daemon.
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[821]: dbus-daemon[821]: Successfully activated service 'org.a11y.atspi.Registry'
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[889]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Aug  9 11:43:02 michmichmachine kernel: [   14.702840] rfkill: input handler disabled
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.freedesktop.systemd1' requested by ':1.19' (uid=115 pid=890 comm="/usr/libexec/gsd-sharing ")
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Aug  9 11:43:02 michmichmachine gsd-sharing[890]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Aug  9 11:43:02 michmichmachine gsd-sharing[890]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Aug  9 11:43:02 michmichmachine gsd-sharing[890]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Aug  9 11:43:02 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'org.gnome.Shell.Notifications'
+Aug  9 11:43:02 michmichmachine gnome-shell[699]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+Aug  9 11:43:02 michmichmachine org.gnome.Shell.desktop[824]: glamor: 'wl_drm' not supported
+Aug  9 11:43:02 michmichmachine org.gnome.Shell.desktop[824]: Missing Wayland requirements for glamor GBM backend
+Aug  9 11:43:02 michmichmachine org.gnome.Shell.desktop[824]: Failed to initialize glamor, falling back to sw
+Aug  9 11:43:02 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.realmd' unit='realmd.service' requested by ':1.33' (uid=115 pid=699 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:02 michmichmachine systemd[1]: Starting Realm and Domain Configuration...
+Aug  9 11:43:02 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.realmd'
+Aug  9 11:43:02 michmichmachine systemd[1]: Started Realm and Domain Configuration.
+Aug  9 11:43:03 michmichmachine ibus-daemon[849]: GChildWatchSource: Exit status of a child process was requested but ECHILD was received by waitpid(). See the documentation of g_child_watch_source_new() for possible causes.
+Aug  9 11:43:03 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service' requested by ':1.49' (uid=115 pid=897 comm="/usr/libexec/gsd-color ")
+Aug  9 11:43:03 michmichmachine systemd[1]: Starting Manage, Install and Generate Color Profiles...
+Aug  9 11:43:03 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='ca.desrt.dconf' requested by ':1.26' (uid=115 pid=901 comm="/usr/libexec/gsd-keyboard ")
+Aug  9 11:43:03 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.gnome.Shell.Screencast' requested by ':1.31' (uid=115 pid=910 comm="/usr/libexec/gsd-media-keys ")
+Aug  9 11:43:03 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Activating service name='org.freedesktop.portal.IBus' requested by ':1.41' (uid=115 pid=995 comm="ibus-daemon --panel disable -r --xim ")
+Aug  9 11:43:03 michmichmachine gnome-session-binary[667]: Entering running state
+Aug  9 11:43:03 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'ca.desrt.dconf'
+Aug  9 11:43:03 michmichmachine colord[1002]: failed to get edid data: EDID length is too small
+Aug  9 11:43:03 michmichmachine xbrlapi.desktop[1021]: openConnection: connect: Aucun fichier ou dossier de ce type
+Aug  9 11:43:03 michmichmachine xbrlapi.desktop[1021]: cannot connect to braille devices daemon brltty at :0
+Aug  9 11:43:03 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.ColorManager'
+Aug  9 11:43:03 michmichmachine systemd[1]: Started Manage, Install and Generate Color Profiles.
+Aug  9 11:43:03 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'org.freedesktop.portal.IBus'
+Aug  9 11:43:03 michmichmachine gsd-media-keys[910]: Failed to grab accelerator for keybinding settings:rfkill
+Aug  9 11:43:03 michmichmachine gsd-media-keys[910]: Failed to grab accelerator for keybinding settings:playback-repeat
+Aug  9 11:43:03 michmichmachine gsd-media-keys[910]: Failed to grab accelerator for keybinding settings:hibernate
+Aug  9 11:43:03 michmichmachine gsd-media-keys[910]: Failed to grab accelerator for keybinding settings:playback-random
+Aug  9 11:43:04 michmichmachine gsd-color[897]: failed to get edid: unable to get EDID for output
+Aug  9 11:43:04 michmichmachine gsd-color[897]: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+Aug  9 11:43:04 michmichmachine gnome-shell[699]: Registering session with GDM
+Aug  9 11:43:04 michmichmachine systemd[1]: Received SIGRTMIN+21 from PID 172 (plymouthd).
+Aug  9 11:43:04 michmichmachine systemd[1]: Finished Hold until boot process finishes up.
+Aug  9 11:43:04 michmichmachine systemd[1]: Reached target Multi-User System.
+Aug  9 11:43:04 michmichmachine systemd[1]: Reached target Graphical Interface.
+Aug  9 11:43:04 michmichmachine systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Aug  9 11:43:04 michmichmachine systemd[600]: Started Tracker file system data miner.
+Aug  9 11:43:04 michmichmachine systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Aug  9 11:43:04 michmichmachine systemd[1]: Finished Update UTMP about System Runlevel Changes.
+Aug  9 11:43:04 michmichmachine systemd[1]: Startup finished in 1.849s (kernel) + 14.949s (userspace) = 16.798s.
+Aug  9 11:43:05 michmichmachine org.gnome.Shell.desktop[1065]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+Aug  9 11:43:05 michmichmachine org.gnome.Shell.desktop[1065]: > Warning:          Unsupported maximum keycode 569, clipping.
+Aug  9 11:43:05 michmichmachine org.gnome.Shell.desktop[1065]: >                   X11 cannot support keycodes above 255.
+Aug  9 11:43:05 michmichmachine org.gnome.Shell.desktop[1065]: Errors from xkbcomp are not fatal to the X server
+Aug  9 11:43:05 michmichmachine /usr/libexec/gdm-wayland-session[665]: dbus-daemon[665]: [session uid=115 pid=665] Successfully activated service 'org.gnome.Shell.Screencast'
+Aug  9 11:43:06 michmichmachine systemd[600]: Started Tracker metadata extractor.
+Aug  9 11:43:06 michmichmachine systemd[600]: Reached target Main User Target.
+Aug  9 11:43:06 michmichmachine systemd[600]: Startup finished in 7.505s.
+Aug  9 11:43:10 michmichmachine systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Aug  9 11:43:12 michmichmachine systemd[1]: Created slice User Slice of UID 1000.
+Aug  9 11:43:12 michmichmachine systemd[1]: Starting User Runtime Directory /run/user/1000...
+Aug  9 11:43:12 michmichmachine systemd[1]: Finished User Runtime Directory /run/user/1000.
+Aug  9 11:43:12 michmichmachine systemd[1]: Starting User Manager for UID 1000...
+Aug  9 11:43:12 michmichmachine systemd[1084]: Queued start job for default target Main User Target.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Created slice User Application Slice.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Reached target Paths.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Reached target Timers.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Starting D-Bus User Message Bus Socket.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on GnuPG network certificate management daemon.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on GnuPG cryptographic agent and passphrase cache.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on Multimedia System.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on debconf communication socket.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on Sound System.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Listening on D-Bus User Message Bus Socket.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Reached target Sockets.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Reached target Basic System.
+Aug  9 11:43:12 michmichmachine systemd[1]: Started User Manager for UID 1000.
+Aug  9 11:43:12 michmichmachine systemd[1]: Started Session 2 of user michel.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Started Multimedia Service.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Starting Sound Service...
+Aug  9 11:43:12 michmichmachine systemd[1084]: Starting Tracker metadata extractor...
+Aug  9 11:43:12 michmichmachine systemd[1084]: Starting Tracker file system data miner...
+Aug  9 11:43:12 michmichmachine tracker-miner-f[1102]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:43:12 michmichmachine tracker-extract[1101]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:43:12 michmichmachine tracker-extract[1101]: Setting priority nice level to 19
+Aug  9 11:43:12 michmichmachine kernel: [   25.093397] rfkill: input handler enabled
+Aug  9 11:43:12 michmichmachine tracker-miner-f[1102]: Setting priority nice level to 19
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1099 of process 1099 owned by '1000' high priority at nice level -11.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 2 users.
+Aug  9 11:43:12 michmichmachine systemd[1084]: Started D-Bus User Message Bus.
+Aug  9 11:43:12 michmichmachine pipewire[1099]: Failed to receive portal pid: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get PID of name 'org.freedesktop.portal.Desktop': no such name
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1100 of process 1100 owned by '1000' high priority at nice level -11.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 9 threads of 5 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 9 threads of 5 processes of 2 users.
+Aug  9 11:43:12 michmichmachine pulseaudio[1100]: Disabling timer-based scheduling because running inside a VM.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1114 of process 1114 owned by '1000' high priority at nice level -11.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 10 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 10 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 10 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1103 of process 1099 owned by '1000' RT at priority 20.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 11 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 11 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 11 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1115 of process 1114 owned by '1000' RT at priority 20.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 12 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1123 of process 1100 owned by '1000' RT at priority 5.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 13 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine pulseaudio[1100]: Disabling timer-based scheduling because running inside a VM.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 13 threads of 6 processes of 2 users.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Successfully made thread 1126 of process 1100 owned by '1000' RT at priority 5.
+Aug  9 11:43:12 michmichmachine rtkit-daemon[649]: Supervising 14 threads of 6 processes of 2 users.
+Aug  9 11:43:13 michmichmachine pulseaudio[1100]: Failed to open cookie file '/home/michel/.config/pulse/cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:43:13 michmichmachine pulseaudio[1100]: Failed to load authentication key '/home/michel/.config/pulse/cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:43:13 michmichmachine pulseaudio[1100]: Failed to open cookie file '/home/michel/.pulse-cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:43:13 michmichmachine pulseaudio[1100]: Failed to load authentication key '/home/michel/.pulse-cookie': Aucun fichier ou dossier de ce type
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Sound Service.
+Aug  9 11:43:13 michmichmachine bluetoothd[480]: Endpoint registered: sender=:1.66 path=/MediaEndpoint/A2DPSink/sbc
+Aug  9 11:43:13 michmichmachine bluetoothd[480]: Endpoint registered: sender=:1.66 path=/MediaEndpoint/A2DPSource/sbc
+Aug  9 11:43:13 michmichmachine bluetoothd[480]: src/profile.c:ext_start_servers() RFCOMM server failed for Headset Voice gateway: rfcomm_bind: Address already in use (98)
+Aug  9 11:43:13 michmichmachine bluetoothd[480]: src/profile.c:ext_start_servers() RFCOMM server failed for Headset unit: rfcomm_bind: Address already in use (98)
+Aug  9 11:43:13 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting Virtual filesystem service...
+Aug  9 11:43:13 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.Daemon'
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Virtual filesystem service.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &DOCUMENTS. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &MUSIC. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &PICTURES. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &VIDEOS. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &DOWNLOAD. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &DOCUMENTS. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &MUSIC. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &PICTURES. Ignoring this location.
+Aug  9 11:43:13 michmichmachine tracker-miner-f[1102]: Unable to get XDG user directory path for special directory &VIDEOS. Ignoring this location.
+Aug  9 11:43:13 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:13 michmichmachine systemd[1084]: Created slice app-gnome\x2dsession\x2dmanager.slice.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Created slice User Core Session Slice.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Reached target GNOME Wayland Session.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Reached target GNOME Shell.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting Monitor Session leader for GNOME Session...
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting Virtual filesystem service - disk device monitor...
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started OpenSSH Agent.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Reached target Session services which should run early before the graphical session is brought up.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Monitor Session leader for GNOME Session.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Reached target Tasks to be run before GNOME Session starts.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting GNOME Session Manager (session: gnome)...
+Aug  9 11:43:13 michmichmachine agent-launch[1190]: dbus-update-activation-environment: setting SSH_AUTH_SOCK=/run/user/1000/openssh_agent
+Aug  9 11:43:13 michmichmachine agent-launch[1190]: dbus-update-activation-environment: setting SSH_AGENT_LAUNCHER=openssh
+Aug  9 11:43:13 michmichmachine agent-launch[1186]: SSH_AUTH_SOCK=/run/user/1000/openssh_agent; export SSH_AUTH_SOCK;
+Aug  9 11:43:13 michmichmachine agent-launch[1186]: echo Agent pid 1186;
+Aug  9 11:43:13 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Virtual filesystem service - disk device monitor.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:13 michmichmachine systemd[1084]: app-gnome-gnome\x2dkeyring\x2dsecrets-1201.scope: Succeeded.
+Aug  9 11:43:13 michmichmachine gnome-keyring-ssh.desktop[1206]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Aug  9 11:43:13 michmichmachine systemd[1084]: app-gnome-gnome\x2dkeyring\x2dssh-1202.scope: Succeeded.
+Aug  9 11:43:13 michmichmachine gnome-keyring-pkcs11.desktop[1207]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started GNOME Session Manager (session: gnome).
+Aug  9 11:43:13 michmichmachine systemd[1084]: Reached target GNOME Session Manager is ready.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting GNOME Shell on Wayland...
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting GNOME Shell on X11...
+Aug  9 11:43:13 michmichmachine systemd[1084]: app-gnome-gnome\x2dkeyring\x2dpkcs11-1204.scope: Succeeded.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Control process exited, code=exited, status=2/INVALIDARGUMENT
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Condition check resulted in GNOME Shell on X11 being skipped.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Scheduled restart job, restart counter is at 1.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Stopped GNOME Shell on X11.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting GNOME Shell on X11...
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Control process exited, code=exited, status=2/INVALIDARGUMENT
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Condition check resulted in GNOME Shell on X11 being skipped.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Scheduled restart job, restart counter is at 2.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Stopped GNOME Shell on X11.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting GNOME Shell on X11...
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:13 michmichmachine systemd[1084]: app-gnome-xdg\x2duser\x2ddirs-1211.scope: Failed to add PIDs to scope's control group: No such process
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: DIS cannot start: GATT is disabled
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Failed to init deviceinfo plugin
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Failed to init proximity plugin
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Failed to init time plugin
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Failed to init alert plugin
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Failed to init thermometer plugin
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Failed to init gatt_example plugin
+Aug  9 11:43:13 michmichmachine bluetoothd[894]: Bluetooth Management interface initialized
+Aug  9 11:43:13 michmichmachine bluetoothd[862]: New plugin device detected
+Aug  9 11:43:13 michmichmachine bluetoothd[862]: Mac device f6:a9:f3:8c:25:95
+Aug  9 11:43:13 michmichmachine systemd[1084]: app-gnome-xdg\x2duser\x2ddirs-1211.scope: Failed with result 'resources'.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Failed to start Application launched by gnome-session-binary.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Control process exited, code=exited, status=2/INVALIDARGUMENT
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Condition check resulted in GNOME Shell on X11 being skipped.
+Aug  9 11:43:13 michmichmachine systemd[1084]: app-gnome-pulseaudio-1214.scope: Succeeded.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Scheduled restart job, restart counter is at 3.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Stopped GNOME Shell on X11.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Start request repeated too quickly.
+Aug  9 11:43:13 michmichmachine systemd[1084]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+Aug  9 11:43:13 michmichmachine systemd[1084]: Condition check resulted in GNOME Shell on X11 being skipped.
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: VMware: No 3D enabled (0, SuccÃ¨s).
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: libEGL warning: DRI2: failed to create dri screen
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: VMware: No 3D enabled (0, SuccÃ¨s).
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: libEGL warning: DRI2: failed to create dri screen
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: VMware: No 3D enabled (0, SuccÃ¨s).
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: Failed to initialize accelerated iGPU/dGPU framebuffer sharing: Do not want to use software renderer (llvmpipe (LLVM 11.0.1, 256 bits)), falling back to CPU copy path
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: Boot VGA GPU /dev/dri/card0 selected as primary
+Aug  9 11:43:13 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:13 michmichmachine systemd[1084]: Starting Virtual filesystem service - GNOME Online Accounts monitor...
+Aug  9 11:43:13 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.OnlineAccounts' requested by ':1.21' (uid=1000 pid=1230 comm="/usr/libexec/gvfs-goa-volume-monitor ")
+Aug  9 11:43:13 michmichmachine gnome-shell[1212]: Disabling DMA buffer screen sharing for driver 'vmwgfx'.
+Aug  9 11:43:14 michmichmachine goa-daemon[1234]: goa-daemon version 3.38.0 starting
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Identity' requested by ':1.23' (uid=1000 pid=1234 comm="/usr/libexec/goa-daemon ")
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.OnlineAccounts'
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+Aug  9 11:43:14 michmichmachine systemd[1084]: Started Virtual filesystem service - GNOME Online Accounts monitor.
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Identity'
+Aug  9 11:43:14 michmichmachine gnome-shell[1212]: Getting parental controls for user 1000
+Aug  9 11:43:14 michmichmachine gnome-shell[1212]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+Aug  9 11:43:14 michmichmachine gnome-shell[1212]: Will monitor session 2
+Aug  9 11:43:14 michmichmachine gnome-shell[1212]: Called enable_unredirect_for_display while unredirection is enabled.
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:14 michmichmachine systemd[1084]: Starting Virtual filesystem service - digital camera monitor...
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+Aug  9 11:43:14 michmichmachine systemd[1084]: Started Virtual filesystem service - digital camera monitor.
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.freedesktop.portal.IBus' requested by ':1.26' (uid=1000 pid=1251 comm="ibus-daemon --panel disable ")
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.portal.IBus'
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:14 michmichmachine systemd[1084]: Starting sandboxed app permission store...
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+Aug  9 11:43:14 michmichmachine systemd[1084]: Started sandboxed app permission store.
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.31' (uid=1000 pid=1279 comm="/usr/libexec/gnome-shell-calendar-server ")
+Aug  9 11:43:14 michmichmachine systemd[1084]: Starting Evolution source registry...
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='ca.desrt.dconf' requested by ':1.32' (uid=1000 pid=1286 comm="/usr/libexec/evolution-source-registry ")
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'ca.desrt.dconf'
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+Aug  9 11:43:14 michmichmachine systemd[1084]: Started Evolution source registry.
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Shell.CalendarServer'
+Aug  9 11:43:14 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gnome.evolution.dataserver.Calendar8' unit='evolution-calendar-factory.service' requested by ':1.31' (uid=1000 pid=1279 comm="/usr/libexec/gnome-shell-calendar-server ")
+Aug  9 11:43:14 michmichmachine systemd[1084]: Starting Evolution calendar service...
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Telepathy is not available, chat integration will be disabled.
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting Virtual filesystem service - Apple File Conduit monitor...
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Virtual filesystem service - Apple File Conduit monitor.
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting Virtual filesystem service - Media Transfer Protocol monitor...
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.evolution.dataserver.Calendar8'
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Evolution calendar service.
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Virtual filesystem service - Media Transfer Protocol monitor.
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gnome.evolution.dataserver.AddressBook10' unit='evolution-addressbook-factory.service' requested by ':1.34' (uid=1000 pid=1298 comm="/usr/libexec/evolution-calendar-factory ")
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting Evolution address book service...
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: firefox-esr.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Evolution.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: rhythmbox.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: libreoffice-writer.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Nautilus.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Software.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: yelp.desktop
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Evolution address book service.
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: gnome-control-center.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Contacts.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Documents.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Nautilus.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Calendar.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Calculator.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Characters.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.clocks.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Software.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.seahorse.Application.desktop
+Aug  9 11:43:15 michmichmachine gnome-shell[1212]: Warning: Hiding app because parental controls not yet initialised: org.gnome.Terminal.desktop
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Shell.Notifications' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:15 michmichmachine at-spi-dbus-bus.desktop[1220]: dbus-daemon[1220]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:15 michmichmachine at-spi-dbus-bus.desktop[1220]: dbus-daemon[1220]: Successfully activated service 'org.a11y.atspi.Registry'
+Aug  9 11:43:15 michmichmachine at-spi-dbus-bus.desktop[1332]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME Shell on Wayland.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME Session is initialized.
+Aug  9 11:43:15 michmichmachine systemd[1084]: GNOME session X11 services is not active.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Dependency failed for GNOME XSettings service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: org.gnome.SettingsDaemon.XSettings.service: Job org.gnome.SettingsDaemon.XSettings.service/start failed with result 'dependency'.
+Aug  9 11:43:15 michmichmachine systemd[1084]: gnome-session-x11-services-ready.target: Job gnome-session-x11-services-ready.target/verify-active failed with result 'dependency'.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME Session (session: gnome).
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME XSettings target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting Signal initialization done to GNOME Session Manager...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME accessibility service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME color management service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME date & time service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME maintenance of expirable data service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME keyboard configuration service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME keyboard shortcuts service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME power management service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME printer notifications service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME RFKill support service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME FreeDesktop screensaver service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME file sharing service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME smartcard service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME sound sample caching service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME USB protection service...
+Aug  9 11:43:15 michmichmachine systemd[1084]: Starting GNOME Wacom tablet support service...
+Aug  9 11:43:15 michmichmachine gnome-session-binary[1188]: Entering running state
+Aug  9 11:43:15 michmichmachine at-spi2-registr[1332]: Failed to register client: GDBus.Error:org.gnome.SessionManager.AlreadyRegistered: Unable to register client
+Aug  9 11:43:15 michmichmachine at-spi2-registr[1332]: Unable to register client with session manager
+Aug  9 11:43:15 michmichmachine systemd[1084]: gnome-session-signal-init.service: Succeeded.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Finished Signal initialization done to GNOME Session Manager.
+Aug  9 11:43:15 michmichmachine kernel: [   28.051502] rfkill: input handler disabled
+Aug  9 11:43:15 michmichmachine gnome-session[1188]: gnome-session-binary[1188]: GnomeDesktop-WARNING: Could not create transient scope for PID 1359: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 1359 does not exist.
+Aug  9 11:43:15 michmichmachine gnome-session-binary[1188]: GnomeDesktop-WARNING: Could not create transient scope for PID 1359: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 1359 does not exist.
+Aug  9 11:43:15 michmichmachine gsd-sharing[1362]: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Aug  9 11:43:15 michmichmachine gsd-sharing[1362]: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Aug  9 11:43:15 michmichmachine gsd-sharing[1362]: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Aug  9 11:43:15 michmichmachine gnome-session[1188]: gnome-session-binary[1188]: GnomeDesktop-WARNING: Could not create transient scope for PID 1375: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 1375 does not exist.
+Aug  9 11:43:15 michmichmachine gnome-session-binary[1188]: GnomeDesktop-WARNING: Could not create transient scope for PID 1375: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 1375 does not exist.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME FreeDesktop screensaver service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME maintenance of expirable data service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME accessibility service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME RFKill support service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME smartcard service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started Application launched by gnome-session-binary.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME accessibility target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME maintenance of expirable data target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME RFKill support target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME FreeDesktop screensaver target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME smartcard target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME file sharing service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME file sharing target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME printer notifications service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME printer notifications target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME USB protection service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME USB protection target.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Started GNOME date & time service.
+Aug  9 11:43:15 michmichmachine systemd[1084]: Reached target GNOME date & time target.
+Aug  9 11:43:15 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Shell.Notifications'
+Aug  9 11:43:16 michmichmachine systemd[1084]: Started GNOME sound sample caching service.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME sound sample caching target.
+Aug  9 11:43:16 michmichmachine systemd[1084]: app-gnome-im\x2dlaunch-1364.scope: Succeeded.
+Aug  9 11:43:16 michmichmachine systemd[1084]: app-gnome-gnome\x2dshell\x2doverrides\x2dmigration-1380.scope: Succeeded.
+Aug  9 11:43:16 michmichmachine NetworkManager[484]: <info>  [1660038196.1864] agent-manager: agent[09f89097d9c1a556,:1.69/org.gnome.Shell.NetworkAgent/1000]: agent registered
+Aug  9 11:43:16 michmichmachine gsd-usb-protect[1376]: Failed to fetch USBGuard parameters: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.usbguard1 was not provided by any .service files
+Aug  9 11:43:16 michmichmachine gnome-shell[1212]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+Aug  9 11:43:16 michmichmachine gnome-shell[1237]: glamor: 'wl_drm' not supported
+Aug  9 11:43:16 michmichmachine gnome-shell[1237]: Missing Wayland requirements for glamor GBM backend
+Aug  9 11:43:16 michmichmachine gnome-shell[1237]: Failed to initialize glamor, falling back to sw
+Aug  9 11:43:16 michmichmachine systemd[1084]: Started GNOME color management service.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME color management target.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Started GNOME keyboard configuration service.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME keyboard configuration target.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Started GNOME power management service.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME power management target.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Started GNOME keyboard shortcuts service.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME keyboard shortcuts target.
+Aug  9 11:43:16 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Shell.Screencast' requested by ':1.55' (uid=1000 pid=1347 comm="/usr/libexec/gsd-media-keys ")
+Aug  9 11:43:16 michmichmachine systemd[1084]: Started GNOME Wacom tablet support service.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME Wacom tablet support target.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME Session.
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target GNOME Wayland Session (session: gnome).
+Aug  9 11:43:16 michmichmachine systemd[1084]: Reached target Current graphical user session.
+Aug  9 11:43:17 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.87' (uid=1000 pid=1368 comm="/usr/bin/gnome-software --gapplication-service ")
+Aug  9 11:43:17 michmichmachine systemd[1]: Starting Firmware update daemon...
+Aug  9 11:43:17 michmichmachine gsd-media-keys[1347]: Failed to grab accelerator for keybinding settings:hibernate
+Aug  9 11:43:17 michmichmachine gsd-media-keys[1347]: Failed to grab accelerator for keybinding settings:rfkill
+Aug  9 11:43:17 michmichmachine gsd-media-keys[1347]: Failed to grab accelerator for keybinding settings:playback-repeat
+Aug  9 11:43:17 michmichmachine gsd-media-keys[1347]: Failed to grab accelerator for keybinding settings:playback-random
+Aug  9 11:43:17 michmichmachine gsd-color[1341]: failed to get edid: unable to get EDID for output
+Aug  9 11:43:17 michmichmachine gsd-color[1341]: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+Aug  9 11:43:17 michmichmachine gsd-color[897]: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+Aug  9 11:43:17 michmichmachine gnome-shell[699]: Failed to set CRTC gamma: drmModeCrtcSetGamma on CRTC 38 failed: Permission non accordÃ©e
+Aug  9 11:43:17 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.34' (uid=1000 pid=1298 comm="/usr/libexec/evolution-calendar-factory ")
+Aug  9 11:43:17 michmichmachine systemd[1084]: Starting Virtual filesystem metadata service...
+Aug  9 11:43:17 michmichmachine systemd[1084]: Reached target GNOME session X11 services.
+Aug  9 11:43:17 michmichmachine systemd[1084]: Starting GNOME XSettings service...
+Aug  9 11:43:17 michmichmachine gnome-shell[1560]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+Aug  9 11:43:17 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gtk.vfs.Metadata'
+Aug  9 11:43:17 michmichmachine systemd[1084]: Started Virtual filesystem metadata service.
+Aug  9 11:43:17 michmichmachine gnome-shell[1560]: > Warning:          Unsupported maximum keycode 569, clipping.
+Aug  9 11:43:17 michmichmachine gnome-shell[1560]: >                   X11 cannot support keycodes above 255.
+Aug  9 11:43:17 michmichmachine gnome-shell[1560]: Errors from xkbcomp are not fatal to the X server
+Aug  9 11:43:17 michmichmachine gnome-shell[1212]: GNOME Shell started at Tue Aug 09 2022 11:43:15 GMT+0200 (CEST)
+Aug  9 11:43:17 michmichmachine gnome-shell[1212]: Registering session with GDM
+Aug  9 11:43:17 michmichmachine gnome-shell[699]: Connection to xwayland lost
+Aug  9 11:43:17 michmichmachine gnome-session-binary[667]: WARNING: Lost name on bus: org.gnome.SessionManager
+Aug  9 11:43:17 michmichmachine gnome-session[667]: gnome-session-binary[667]: WARNING: Lost name on bus: org.gnome.SessionManager
+Aug  9 11:43:17 michmichmachine systemd[1]: session-c1.scope: Succeeded.
+Aug  9 11:43:17 michmichmachine systemd[1]: session-c1.scope: Consumed 4.755s CPU time.
+Aug  9 11:43:17 michmichmachine gdm3: Gdm: Child process -635 was already dead.
+Aug  9 11:43:17 michmichmachine systemd[600]: pulseaudio.service: Succeeded.
+Aug  9 11:43:17 michmichmachine systemd[600]: pulseaudio.service: Consumed 1.040s CPU time.
+Aug  9 11:43:17 michmichmachine bluetoothd[480]: Endpoint unregistered: sender=:1.30 path=/MediaEndpoint/A2DPSink/sbc
+Aug  9 11:43:17 michmichmachine bluetoothd[480]: Endpoint unregistered: sender=:1.30 path=/MediaEndpoint/A2DPSource/sbc
+Aug  9 11:43:17 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.freedesktop.portal.IBus' requested by ':1.72' (uid=1000 pid=1553 comm="ibus-daemon --panel disable -r --xim ")
+Aug  9 11:43:18 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.portal.IBus'
+Aug  9 11:43:18 michmichmachine vmtoolsd[1386]: gtk_disable_setlocale() must be called before gtk_init()
+Aug  9 11:43:18 michmichmachine kernel: [   30.698524] input: VMware DnD UInput pointer as /devices/virtual/input/input7
+Aug  9 11:43:19 michmichmachine systemd[1084]: Started GNOME XSettings service.
+Aug  9 11:43:19 michmichmachine systemd[1084]: Reached target GNOME session X11 services.
+Aug  9 11:43:19 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Shell.Screencast'
+Aug  9 11:43:19 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.fwupd'
+Aug  9 11:43:19 michmichmachine systemd[1]: Started Firmware update daemon.
+Aug  9 11:43:19 michmichmachine gnome-software[1368]: plugin fwupd took 2,8 seconds to do setup
+Aug  9 11:43:20 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:20 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 11:43:20 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 11:43:20 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 11:43:22 michmichmachine systemd[600]: tracker-extract.service: Succeeded.
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.ControlCenter.SearchProvider' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Contacts.SearchProvider' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Documents' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Nautilus' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Calendar' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Calculator.SearchProvider' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.Characters.BackgroundService' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.clocks' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.seahorse.Application' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.20' (uid=1000 pid=1212 comm="/usr/bin/gnome-shell ")
+Aug  9 11:43:23 michmichmachine systemd[1084]: Created slice app-org.gnome.Terminal.slice.
+Aug  9 11:43:23 michmichmachine systemd[1084]: Starting GNOME Terminal Server...
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.ControlCenter.SearchProvider'
+Aug  9 11:43:23 michmichmachine gnome-software[1368]: plugin appstream took 3,5 seconds to do setup
+Aug  9 11:43:23 michmichmachine gnome-software[1368]: enabled plugins: desktop-categories, fwupd, os-release, packagekit, packagekit-local, packagekit-offline, packagekit-proxy, packagekit-refine-repos, packagekit-refresh, packagekit-upgrade, packagekit-url-to-app, appstream, desktop-menu-path, hardcoded-blocklist, hardcoded-popular, malcontent, modalias, odrs, packagekit-refine, rewrite-resource, packagekit-history, provenance, systemd-updates, generic-updates, provenance-license, icons, key-colors, key-colors-metadata
+Aug  9 11:43:23 michmichmachine gnome-software[1368]: disabled plugins: dpkg, dummy, repos
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.clocks'
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.seahorse.Application'
+Aug  9 11:43:23 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.91' (uid=1000 pid=1687 comm="/usr/bin/gnome-calendar --gapplication-service ")
+Aug  9 11:43:23 michmichmachine systemd[1]: Starting Time & Date Service...
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Characters.BackgroundService'
+Aug  9 11:43:23 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Contacts.SearchProvider'
+Aug  9 11:43:24 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Nautilus'
+Aug  9 11:43:24 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Aug  9 11:43:24 michmichmachine systemd[1]: Started Time & Date Service.
+Aug  9 11:43:24 michmichmachine gnome-software[1368]: failed to set proxy: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._pk_2dengine_2derror_2dquark.Code3: setting the proxy failed: failed to get the uid
+Aug  9 11:43:24 michmichmachine gnome-software[1368]: failed to set proxies: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._pk_2dengine_2derror_2dquark.Code3: setting the proxy failed: failed to get the uid
+Aug  9 11:43:24 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Documents'
+Aug  9 11:43:24 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Calculator.SearchProvider'
+Aug  9 11:43:24 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Calendar'
+Aug  9 11:43:24 michmichmachine gnome-calculato[1690]: search-provider.vala:117: Failed to spawn Calculator: Le processus fils a Ã©tÃ© tuÃ© par le signal 9
+Aug  9 11:43:24 michmichmachine gnome-terminal-server[1692]: Display does not support owner-change; copy/paste will be broken!
+Aug  9 11:43:24 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.Terminal'
+Aug  9 11:43:24 michmichmachine systemd[1084]: Started GNOME Terminal Server.
+Aug  9 11:43:24 michmichmachine systemd[1084]: Started Application launched by gnome-shell.
+Aug  9 11:43:25 michmichmachine gnome-software[1368]: not handling error failed for action refresh: Failed to update metadata for lvfs: checksum failure: failed to verify data, expected 8b9c354ce47e1874a1b73d624acd4cbbbbf53f61
+Aug  9 11:43:25 michmichmachine systemd[1084]: Started VTE child process 1805 launched by gnome-terminal-server process 1692.
+Aug  9 11:43:25 michmichmachine systemd[1084]: app-gnome-org.gnome.Terminal-1790.scope: Succeeded.
+Aug  9 11:43:27 michmichmachine packagekitd[879]: Impossible de rÃ©cupÃ©rer http://deb.debian.org/debian/dists/bullseye/InRelease  
+Aug  9 11:43:27 michmichmachine packagekitd[879]: Impossible de rÃ©cupÃ©rer http://security.debian.org/debian-security/dists/bullseye-security/InRelease  
+Aug  9 11:43:27 michmichmachine packagekitd[879]: Impossible de rÃ©cupÃ©rer http://deb.debian.org/debian/dists/bullseye-updates/InRelease  
+Aug  9 11:43:27 michmichmachine packagekitd[879]: Le tÃ©lÃ©chargement de quelques fichiers d'index a Ã©chouÃ©, ils ont Ã©tÃ© ignorÃ©s, ou les anciens ont Ã©tÃ© utilisÃ©s Ã  la place.
+Aug  9 11:43:27 michmichmachine PackageKit: refresh-cache transaction /1_ecddcdbc from uid 1000 finished with cancelled-priority after 1851ms
+Aug  9 11:43:27 michmichmachine gnome-software[1368]: not handling error failed for action refresh: E: Impossible de rÃ©cupÃ©rer http://deb.debian.org/debian/dists/bullseye/InRelease  #012E: Impossible de rÃ©cupÃ©rer http://security.debian.org/debian-security/dists/bullseye-security/InRelease  #012E: Impossible de rÃ©cupÃ©rer http://deb.debian.org/debian/dists/bullseye-updates/InRelease  #012E: Le tÃ©lÃ©chargement de quelques fichiers d'index a Ã©chouÃ©, ils ont Ã©tÃ© ignorÃ©s, ou les anciens ont Ã©tÃ© utilisÃ©s Ã  la place.
+Aug  9 11:43:27 michmichmachine PackageKit: resolve transaction /2_ebbdcbba from uid 1000 finished with success after 742ms
+Aug  9 11:43:27 michmichmachine dbus-daemon[642]: [session uid=115 pid=642] Activating via systemd: service name='org.freedesktop.Tracker1.Miner.Extract' unit='tracker-extract.service' requested by ':1.6' (uid=115 pid=639 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:27 michmichmachine systemd[600]: Starting Tracker metadata extractor...
+Aug  9 11:43:27 michmichmachine tracker-extract[1837]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:43:27 michmichmachine tracker-extract[1837]: Setting priority nice level to 19
+Aug  9 11:43:27 michmichmachine systemd[1084]: Started Tracker file system data miner.
+Aug  9 11:43:27 michmichmachine systemd[1084]: Started Tracker metadata extractor.
+Aug  9 11:43:27 michmichmachine systemd[1084]: Reached target Main User Target.
+Aug  9 11:43:27 michmichmachine systemd[1084]: Startup finished in 15.431s.
+Aug  9 11:43:27 michmichmachine systemd[1]: Stopping User Manager for UID 115...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped target Main User Target.
+Aug  9 11:43:27 michmichmachine gvfsd[727]: A connection to the bus can't be made
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping D-Bus User Message Bus...
+Aug  9 11:43:27 michmichmachine tracker-miner-f[639]: g_dbus_connection_call_finish_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Virtual filesystem service - Apple File Conduit monitor...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Virtual filesystem service...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Virtual filesystem service - GNOME Online Accounts monitor...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Virtual filesystem service - digital camera monitor...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Virtual filesystem service - Media Transfer Protocol monitor...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Virtual filesystem service - disk device monitor...
+Aug  9 11:43:27 michmichmachine pipewire-media-session[661]: error id:0 seq:158 res:-32 (Broken pipe): connection error
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Multimedia Service...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Tracker file system data miner...
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopping Tracker metadata database store and lookup manager...
+Aug  9 11:43:27 michmichmachine systemd[600]: pipewire.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Multimedia Service.
+Aug  9 11:43:27 michmichmachine systemd[600]: gvfs-udisks2-volume-monitor.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Virtual filesystem service - disk device monitor.
+Aug  9 11:43:27 michmichmachine systemd[600]: gvfs-goa-volume-monitor.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Virtual filesystem service - GNOME Online Accounts monitor.
+Aug  9 11:43:27 michmichmachine systemd[600]: gvfs-gphoto2-volume-monitor.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Virtual filesystem service - digital camera monitor.
+Aug  9 11:43:27 michmichmachine systemd[600]: gvfs-afc-volume-monitor.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Virtual filesystem service - Apple File Conduit monitor.
+Aug  9 11:43:27 michmichmachine systemd[600]: gvfs-mtp-volume-monitor.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Virtual filesystem service - Media Transfer Protocol monitor.
+Aug  9 11:43:27 michmichmachine systemd[600]: dbus.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped D-Bus User Message Bus.
+Aug  9 11:43:27 michmichmachine systemd[1084]: run-user-115-gvfs.mount: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[1]: run-user-115-gvfs.mount: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: run-user-115-gvfs.mount: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: gvfs-daemon.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Virtual filesystem service.
+Aug  9 11:43:27 michmichmachine tracker-store[810]: Received signal:15->'ComplÃ©tÃ©'
+Aug  9 11:43:27 michmichmachine tracker-store[810]: OK
+Aug  9 11:43:27 michmichmachine systemd[600]: tracker-store.service: Succeeded.
+Aug  9 11:43:27 michmichmachine systemd[600]: Stopped Tracker metadata database store and lookup manager.
+Aug  9 11:43:28 michmichmachine tracker-miner-fs[639]: Received signal:15->'ComplÃ©tÃ©'
+Aug  9 11:43:28 michmichmachine tracker-miner-f[639]: Error while sending AddMatch() message: La connexion est fermÃ©e
+Aug  9 11:43:28 michmichmachine tracker-miner-f[639]: Error while sending AddMatch() message: La connexion est fermÃ©e
+Aug  9 11:43:28 michmichmachine tracker-miner-f[639]: Error while sending AddMatch() message: La connexion est fermÃ©e
+Aug  9 11:43:28 michmichmachine tracker-miner-fs[639]: OK
+Aug  9 11:43:28 michmichmachine systemd[600]: tracker-miner-fs.service: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Stopped Tracker file system data miner.
+Aug  9 11:43:28 michmichmachine systemd[600]: tracker-extract.service: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Stopped Tracker metadata extractor.
+Aug  9 11:43:28 michmichmachine systemd[600]: Stopped target Basic System.
+Aug  9 11:43:28 michmichmachine systemd[600]: Stopped target Paths.
+Aug  9 11:43:28 michmichmachine systemd[600]: Stopped target Sockets.
+Aug  9 11:43:28 michmichmachine systemd[600]: Stopped target Timers.
+Aug  9 11:43:28 michmichmachine systemd[600]: dbus.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed D-Bus User Message Bus Socket.
+Aug  9 11:43:28 michmichmachine systemd[600]: dirmngr.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed GnuPG network certificate management daemon.
+Aug  9 11:43:28 michmichmachine systemd[600]: gpg-agent-browser.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug  9 11:43:28 michmichmachine systemd[600]: gpg-agent-extra.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Aug  9 11:43:28 michmichmachine systemd[600]: gpg-agent-ssh.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Aug  9 11:43:28 michmichmachine systemd[600]: gpg-agent.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed GnuPG cryptographic agent and passphrase cache.
+Aug  9 11:43:28 michmichmachine systemd[600]: pipewire.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed Multimedia System.
+Aug  9 11:43:28 michmichmachine systemd[600]: pk-debconf-helper.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed debconf communication socket.
+Aug  9 11:43:28 michmichmachine systemd[600]: pulseaudio.socket: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Closed Sound System.
+Aug  9 11:43:28 michmichmachine systemd[600]: Removed slice User Application Slice.
+Aug  9 11:43:28 michmichmachine systemd[600]: app.slice: Consumed 2.362s CPU time.
+Aug  9 11:43:28 michmichmachine systemd[600]: Reached target Shutdown.
+Aug  9 11:43:28 michmichmachine systemd[600]: systemd-exit.service: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[600]: Finished Exit the Session.
+Aug  9 11:43:28 michmichmachine systemd[600]: Reached target Exit the Session.
+Aug  9 11:43:28 michmichmachine systemd[1]: user@115.service: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[1]: Stopped User Manager for UID 115.
+Aug  9 11:43:28 michmichmachine systemd[1]: user@115.service: Consumed 2.471s CPU time.
+Aug  9 11:43:28 michmichmachine systemd[1]: Stopping User Runtime Directory /run/user/115...
+Aug  9 11:43:28 michmichmachine systemd[1084]: run-user-115.mount: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[1]: run-user-115.mount: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[1]: user-runtime-dir@115.service: Succeeded.
+Aug  9 11:43:28 michmichmachine systemd[1]: Stopped User Runtime Directory /run/user/115.
+Aug  9 11:43:28 michmichmachine systemd[1]: Removed slice User Slice of UID 115.
+Aug  9 11:43:28 michmichmachine systemd[1]: user-115.slice: Consumed 7.235s CPU time.
+Aug  9 11:43:31 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 149.202.91.39:123 (2.debian.pool.ntp.org).
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Builder.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Calculator.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.clocks.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Dictionary.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Documents.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Evince/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.gedit.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Maps.desktop/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: adding wildcard app */*/*/*/org.gnome.Weather/* to plugin cache
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: Only 0 apps for recent list, hiding
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: hiding category audio-video featured applications: found only 0 to show, need at least 9
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: hiding category games featured applications: found only 0 to show, need at least 9
+Aug  9 11:43:34 michmichmachine PackageKit: resolve transaction /3_bbbbceee from uid 1000 finished with success after 323ms
+Aug  9 11:43:34 michmichmachine PackageKit: resolve transaction /4_aecabaed from uid 1000 finished with success after 223ms
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: FIXME: Unknown progress handling is not yet implemented for GsProgressButton
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: FIXME: Unknown progress handling is not yet implemented for GsProgressButton
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: FIXME: Unknown progress handling is not yet implemented for GsProgressButton
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: FIXME: Unknown progress handling is not yet implemented for GsProgressButton
+Aug  9 11:43:34 michmichmachine gnome-software[1368]: automatically prevented from changing kind on system/package/*/generic/org.gphoto.libgphoto2/* from generic to unknown!
+Aug  9 11:43:35 michmichmachine PackageKit: get-updates transaction /5_cadcddac from uid 1000 finished with success after 513ms
+Aug  9 11:43:35 michmichmachine PackageKit: resolve transaction /6_abdabceb from uid 1000 finished with success after 210ms
+Aug  9 11:43:35 michmichmachine PackageKit: search-file transaction /7_ecbdbbbe from uid 1000 finished with success after 441ms
+Aug  9 11:43:36 michmichmachine PackageKit: get-details transaction /8_ceaadaec from uid 1000 finished with success after 223ms
+Aug  9 11:43:38 michmichmachine systemd[1084]: tracker-extract.service: Succeeded.
+Aug  9 11:43:41 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 82.64.45.50:123 (2.debian.pool.ntp.org).
+Aug  9 11:43:43 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1.Miner.Extract' unit='tracker-extract.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:43:43 michmichmachine systemd[1084]: Starting Tracker metadata extractor...
+Aug  9 11:43:43 michmichmachine tracker-extract[1906]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:43:43 michmichmachine tracker-extract[1906]: Setting priority nice level to 19
+Aug  9 11:43:43 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1.Miner.Extract'
+Aug  9 11:43:43 michmichmachine systemd[1084]: Started Tracker metadata extractor.
+Aug  9 11:43:46 michmichmachine systemd[1]: systemd-localed.service: Succeeded.
+Aug  9 11:43:46 michmichmachine systemd[1]: systemd-hostnamed.service: Succeeded.
+Aug  9 11:43:51 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 212.85.158.10:123 (2.debian.pool.ntp.org).
+Aug  9 11:43:54 michmichmachine systemd[1]: systemd-timedated.service: Succeeded.
+Aug  9 11:43:54 michmichmachine systemd[1084]: tracker-extract.service: Succeeded.
+Aug  9 11:44:02 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 149.202.2.105:123 (2.debian.pool.ntp.org).
+Aug  9 11:44:02 michmichmachine geoclue[876]: Service not used for 60 seconds. Shutting down..
+Aug  9 11:44:02 michmichmachine systemd[1]: geoclue.service: Succeeded.
+Aug  9 11:44:04 michmichmachine systemd[1]: realmd.service: Succeeded.
+Aug  9 11:44:12 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 92.243.6.5:123 (3.debian.pool.ntp.org).
+Aug  9 11:44:14 michmichmachine tracker-store[1631]: OK
+Aug  9 11:44:14 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 11:44:22 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 5.196.8.113:123 (3.debian.pool.ntp.org).
+Aug  9 11:44:25 michmichmachine gnome-software[1368]: not handling error failed for action refresh: Failed to update metadata for lvfs: checksum failure: failed to verify data, expected 8b9c354ce47e1874a1b73d624acd4cbbbbf53f61
+Aug  9 11:44:27 michmichmachine PackageKit: refresh-cache transaction /9_cbcebbca from uid 1000 finished with success after 2176ms
+Aug  9 11:44:28 michmichmachine PackageKit: get-updates transaction /10_acecdcbe from uid 1000 finished with success after 846ms
+Aug  9 11:44:30 michmichmachine PackageKit: get-updates transaction /11_daebbeed from uid 1000 finished with success after 341ms
+Aug  9 11:44:32 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 91.224.149.41:123 (3.debian.pool.ntp.org).
+Aug  9 11:44:43 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 51.254.208.135:123 (3.debian.pool.ntp.org).
+Aug  9 11:45:25 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 212.83.187.62:123 (0.debian.pool.ntp.org).
+Aug  9 11:45:35 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 80.74.64.2:123 (0.debian.pool.ntp.org).
+Aug  9 11:45:46 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 195.154.174.209:123 (0.debian.pool.ntp.org).
+Aug  9 11:45:56 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 178.249.167.0:123 (0.debian.pool.ntp.org).
+Aug  9 11:46:06 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 51.15.182.163:123 (1.debian.pool.ntp.org).
+Aug  9 11:46:16 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 212.85.158.10:123 (1.debian.pool.ntp.org).
+Aug  9 11:46:27 michmichmachine systemd-timesyncd[315]: Timed out waiting for reply from 37.187.122.11:123 (1.debian.pool.ntp.org).
+Aug  9 11:46:27 michmichmachine systemd-timesyncd[315]: Initial synchronization to time server 162.159.200.1:123 (1.debian.pool.ntp.org).
+Aug  9 11:47:57 michmichmachine anacron[478]: Job `cron.daily' started
+Aug  9 11:47:57 michmichmachine anacron[2218]: Updated timestamp for job `cron.daily' to 2022-08-09
+Aug  9 11:47:57 michmichmachine cracklib: no dictionary update necessary.
+Aug  9 11:47:57 michmichmachine anacron[478]: Job `cron.daily' terminated
+Aug  9 11:49:43 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:43 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:43 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:43 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:43 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:43 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:43 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:43 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:44 michmichmachine systemd[1]: Starting The Apache HTTP Server...
+Aug  9 11:49:44 michmichmachine apachectl[2653]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Aug  9 11:49:44 michmichmachine systemd[1]: Started The Apache HTTP Server.
+Aug  9 11:49:44 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:44 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:44 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:44 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:44 michmichmachine systemd[1]: Starting Disk Cache Cleaning Daemon for Apache HTTP Server...
+Aug  9 11:49:44 michmichmachine systemd[1]: Started Disk Cache Cleaning Daemon for Apache HTTP Server.
+Aug  9 11:49:44 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:44 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:44 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:44 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:45 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:45 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:51 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:51 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:51 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:51 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:51 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:51 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:51 michmichmachine systemd[1]: Starting OpenBSD Secure Shell server...
+Aug  9 11:49:51 michmichmachine systemd[1]: Started OpenBSD Secure Shell server.
+Aug  9 11:49:55 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:55 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:55 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:55 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:55 michmichmachine systemd[1]: Reloading.
+Aug  9 11:49:56 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 11:49:56 michmichmachine gnome-software[1368]: Only 0 apps for recent list, hiding
+Aug  9 11:49:56 michmichmachine gnome-software[1368]: hiding category audio-video featured applications: found only 0 to show, need at least 9
+Aug  9 11:49:56 michmichmachine gnome-software[1368]: hiding category games featured applications: found only 0 to show, need at least 9
+Aug  9 11:49:56 michmichmachine gnome-software[1368]: automatically prevented from changing kind on system/package/debian-stable-main/generic/org.gphoto.libgphoto2/* from generic to unknown!
+Aug  9 11:49:57 michmichmachine PackageKit: get-updates transaction /12_ebadabaa from uid 1000 finished with success after 639ms
+Aug  9 11:49:58 michmichmachine gnome-shell[1212]: Window manager warning: last_user_time (430567) is greater than comparison timestamp (430566).  This most likely represents a buggy client sending inaccurate timestamps in messages such as _NET_ACTIVE_WINDOW.  Trying to work around...
+Aug  9 11:49:58 michmichmachine gnome-shell[1212]: Window manager warning: W1 appears to be one of the offending windows with a timestamp of 430567.  Working around...
+Aug  9 11:50:00 michmichmachine PackageKit: get-updates transaction /13_ddcdeabc from uid 1000 finished with success after 413ms
+Aug  9 11:50:12 michmichmachine gsd-color[1341]: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+Aug  9 11:50:13 michmichmachine gsd-color[1341]: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+Aug  9 11:50:27 michmichmachine systemd[1084]: Started Application launched by gnome-shell.
+Aug  9 11:50:28 michmichmachine gnome-shell[1212]: libinput error: event2  - VirtualPS/2 VMware VMMouse: client bug: event processing lagging behind by 31ms, your system is too slow
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Successfully made thread 3463 of process 3370 owned by '1000' RT at priority 10.
+Aug  9 11:50:30 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:32 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:32 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:33 michmichmachine gnome-shell[1212]: libinput error: event2  - VirtualPS/2 VMware VMMouse: client bug: event processing lagging behind by 33ms, your system is too slow
+Aug  9 11:50:35 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:35 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:35 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:35 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 11:50:37 michmichmachine gnome-shell[1212]: libinput error: event0  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 15ms, your system is too slow
+Aug  9 11:50:38 michmichmachine gnome-shell[1212]: libinput error: event0  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 22ms, your system is too slow
+Aug  9 11:50:42 michmichmachine gnome-shell[1212]: libinput error: event2  - VirtualPS/2 VMware VMMouse: client bug: event processing lagging behind by 18ms, your system is too slow
+Aug  9 11:50:44 michmichmachine gnome-shell[1212]: libinput error: event2  - VirtualPS/2 VMware VMMouse: client bug: event processing lagging behind by 55ms, your system is too slow
+Aug  9 11:50:48 michmichmachine gnome-shell[1212]: libinput error: event2  - VirtualPS/2 VMware VMMouse: client bug: event processing lagging behind by 15ms, your system is too slow
+Aug  9 11:50:48 michmichmachine gnome-shell[1212]: libinput error: event2  - VirtualPS/2 VMware VMMouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+Aug  9 11:51:04 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.freedesktop.FileManager1' requested by ':1.114' (uid=1000 pid=3370 comm="/usr/lib/firefox-esr/firefox-esr ")
+Aug  9 11:51:04 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.FileManager1'
+Aug  9 11:51:04 michmichmachine dbus-daemon[482]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.108' (uid=1000 pid=3601 comm="/usr/bin/nautilus --gapplication-service ")
+Aug  9 11:51:04 michmichmachine systemd[1]: Starting Hostname Service...
+Aug  9 11:51:05 michmichmachine dbus-daemon[482]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug  9 11:51:05 michmichmachine systemd[1]: Started Hostname Service.
+Aug  9 11:51:09 michmichmachine systemd[1084]: Started VTE child process 3614 launched by gnome-terminal-server process 1692.
+Aug  9 11:51:34 michmichmachine systemd[1084]: vte-spawn-1ed64ffc-bfcf-4715-bff3-8c70dbe10241.scope: Succeeded.
+Aug  9 11:51:35 michmichmachine systemd[1]: systemd-hostnamed.service: Succeeded.
+Aug  9 11:51:59 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:51:59 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 11:51:59 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 11:51:59 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 11:51:59 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1.Miner.Extract' unit='tracker-extract.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:51:59 michmichmachine systemd[1084]: Starting Tracker metadata extractor...
+Aug  9 11:51:59 michmichmachine tracker-extract[3697]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:51:59 michmichmachine tracker-extract[3697]: Setting priority nice level to 19
+Aug  9 11:52:00 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1.Miner.Extract'
+Aug  9 11:52:00 michmichmachine systemd[1084]: Started Tracker metadata extractor.
+Aug  9 11:52:10 michmichmachine systemd[1084]: tracker-extract.service: Succeeded.
+Aug  9 11:52:30 michmichmachine tracker-store[3673]: OK
+Aug  9 11:52:30 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 11:52:57 michmichmachine anacron[478]: Job `cron.weekly' started
+Aug  9 11:52:57 michmichmachine anacron[3796]: Updated timestamp for job `cron.weekly' to 2022-08-09
+Aug  9 11:52:57 michmichmachine anacron[478]: Job `cron.weekly' terminated
+Aug  9 11:53:26 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:53:26 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 11:53:26 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 11:53:26 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 11:53:57 michmichmachine tracker-store[4032]: OK
+Aug  9 11:53:57 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 11:55:02 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:55:02 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 11:55:02 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 11:55:02 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 11:55:02 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1.Miner.Extract' unit='tracker-extract.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 11:55:02 michmichmachine systemd[1084]: Starting Tracker metadata extractor...
+Aug  9 11:55:02 michmichmachine tracker-extract[4176]: Set scheduler policy to SCHED_IDLE
+Aug  9 11:55:02 michmichmachine tracker-extract[4176]: Setting priority nice level to 19
+Aug  9 11:55:03 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1.Miner.Extract'
+Aug  9 11:55:03 michmichmachine systemd[1084]: Started Tracker metadata extractor.
+Aug  9 11:55:13 michmichmachine systemd[1084]: tracker-extract.service: Succeeded.
+Aug  9 11:55:33 michmichmachine tracker-store[4096]: OK
+Aug  9 11:55:33 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 11:57:57 michmichmachine systemd[1]: Starting Cleanup of Temporary Directories...
+Aug  9 11:57:57 michmichmachine systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Aug  9 11:57:57 michmichmachine systemd[1]: Finished Cleanup of Temporary Directories.
+Aug  9 11:57:57 michmichmachine anacron[478]: Job `cron.monthly' started
+Aug  9 11:57:57 michmichmachine anacron[478]: Job `cron.monthly' terminated
+Aug  9 11:57:57 michmichmachine systemd[1]: anacron.service: Killing process 4970 (anacron) with signal SIGKILL.
+Aug  9 11:57:57 michmichmachine anacron[478]: Normal exit (3 jobs run)
+Aug  9 11:57:57 michmichmachine systemd[1]: anacron.service: Killing process 4970 (anacron) with signal SIGKILL.
+Aug  9 11:57:57 michmichmachine systemd[1]: anacron.service: Succeeded.
+Aug  9 11:57:57 michmichmachine systemd[1]: anacron.service: Unit process 4970 (anacron) remains running after unit stopped.
+Aug  9 11:57:58 michmichmachine systemd[1084]: Started VTE child process 4972 launched by gnome-terminal-server process 1692.
+Aug  9 11:58:22 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating service name='org.gnome.gedit' requested by ':1.115' (uid=1000 pid=3601 comm="/usr/bin/nautilus --gapplication-service ")
+Aug  9 11:58:22 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.gnome.gedit'
+Aug  9 11:58:22 michmichmachine gnome-shell[1212]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+Aug  9 12:00:07 michmichmachine systemd[1]: Started Session 4 of user michel.
+Aug  9 12:00:14 michmichmachine PackageKit: get-updates transaction /14_edeceecd from uid 1000 finished with success after 829ms
+Aug  9 12:00:16 michmichmachine gnome-software[1368]: Only 0 apps for recent list, hiding
+Aug  9 12:00:16 michmichmachine gnome-software[1368]: hiding category audio-video featured applications: found only 0 to show, need at least 9
+Aug  9 12:00:16 michmichmachine gnome-software[1368]: hiding category games featured applications: found only 0 to show, need at least 9
+Aug  9 12:00:16 michmichmachine gnome-software[1368]: automatically prevented from changing kind on system/package/debian-stable-main/generic/org.gphoto.libgphoto2/* from generic to unknown!
+Aug  9 12:00:16 michmichmachine PackageKit: search-file transaction /15_ccbedebb from uid 1000 finished with success after 315ms
+Aug  9 12:00:17 michmichmachine PackageKit: get-details transaction /16_ddeabeba from uid 1000 finished with success after 212ms
+Aug  9 12:00:17 michmichmachine PackageKit: get-updates transaction /17_cccecade from uid 1000 finished with success after 352ms
+Aug  9 12:01:06 michmichmachine systemd[1]: Reloading.
+Aug  9 12:01:06 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 12:01:06 michmichmachine systemd[1]: Reloading.
+Aug  9 12:01:06 michmichmachine systemd[1]: /lib/systemd/system/plymouth-start.service:16: Unit configured to use KillMode=none. This is unsafe, as it disables systemd's process lifecycle management for the service. Please update your service to use a safer KillMode=, such as 'mixed' or 'control-group'. Support for KillMode=none is deprecated and will eventually be removed.
+Aug  9 12:01:06 michmichmachine systemd[1]: Starting vsftpd FTP server...
+Aug  9 12:01:06 michmichmachine systemd[1]: Started vsftpd FTP server.
+Aug  9 12:01:12 michmichmachine gnome-software[1368]: Only 0 apps for recent list, hiding
+Aug  9 12:01:12 michmichmachine gnome-software[1368]: hiding category audio-video featured applications: found only 0 to show, need at least 9
+Aug  9 12:01:12 michmichmachine gnome-software[1368]: hiding category games featured applications: found only 0 to show, need at least 9
+Aug  9 12:01:12 michmichmachine gnome-software[1368]: automatically prevented from changing kind on system/package/debian-stable-main/generic/org.gphoto.libgphoto2/* from generic to unknown!
+Aug  9 12:01:13 michmichmachine PackageKit: get-updates transaction /18_eeadecbe from uid 1000 finished with success after 601ms
+Aug  9 12:01:16 michmichmachine PackageKit: get-updates transaction /19_ddcdccda from uid 1000 finished with success after 403ms
+Aug  9 12:04:57 michmichmachine gnome-shell[1212]: Bogus presentation time 0 travelled back in time, using current time.
+Aug  9 12:09:37 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 12:09:37 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 12:09:37 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 12:09:37 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 12:09:37 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1.Miner.Extract' unit='tracker-extract.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 12:09:37 michmichmachine systemd[1084]: Starting Tracker metadata extractor...
+Aug  9 12:09:37 michmichmachine tracker-extract[5648]: Set scheduler policy to SCHED_IDLE
+Aug  9 12:09:37 michmichmachine tracker-extract[5648]: Setting priority nice level to 19
+Aug  9 12:09:38 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1.Miner.Extract'
+Aug  9 12:09:38 michmichmachine systemd[1084]: Started Tracker metadata extractor.
+Aug  9 12:09:48 michmichmachine systemd[1084]: tracker-extract.service: Succeeded.
+Aug  9 12:10:08 michmichmachine tracker-store[5633]: OK
+Aug  9 12:10:08 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 12:10:40 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 12:10:40 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 12:10:40 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 12:10:40 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 12:11:10 michmichmachine tracker-store[6480]: OK
+Aug  9 12:11:10 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 12:17:01 michmichmachine CRON[8120]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Aug  9 12:24:39 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 12:24:39 michmichmachine systemd[1084]: Starting Tracker metadata database store and lookup manager...
+Aug  9 12:24:39 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1'
+Aug  9 12:24:39 michmichmachine systemd[1084]: Started Tracker metadata database store and lookup manager.
+Aug  9 12:24:39 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Activating via systemd: service name='org.freedesktop.Tracker1.Miner.Extract' unit='tracker-extract.service' requested by ':1.6' (uid=1000 pid=1102 comm="/usr/libexec/tracker-miner-fs ")
+Aug  9 12:24:39 michmichmachine systemd[1084]: Starting Tracker metadata extractor...
+Aug  9 12:24:39 michmichmachine tracker-extract[8253]: Set scheduler policy to SCHED_IDLE
+Aug  9 12:24:39 michmichmachine tracker-extract[8253]: Setting priority nice level to 19
+Aug  9 12:24:41 michmichmachine dbus-daemon[1111]: [session uid=1000 pid=1111] Successfully activated service 'org.freedesktop.Tracker1.Miner.Extract'
+Aug  9 12:24:41 michmichmachine systemd[1084]: Started Tracker metadata extractor.
+Aug  9 12:24:51 michmichmachine systemd[1084]: tracker-extract.service: Succeeded.
+Aug  9 12:25:11 michmichmachine tracker-store[8219]: OK
+Aug  9 12:25:11 michmichmachine systemd[1084]: tracker-store.service: Succeeded.
+Aug  9 12:26:22 michmichmachine NetworkManager[484]: <info>  [1660040782.1914] agent-manager: agent[0bf01da7f7e7fc6a,:1.69/org.gnome.Shell.NetworkAgent/1000]: agent registered
+Aug  9 12:27:52 michmichmachine kernel: [ 2704.512769] usb 1-1: new high-speed USB device number 2 using ehci-pci
+Aug  9 12:27:52 michmichmachine kernel: [ 2704.792988] usb 1-1: device descriptor read/64, error 18
+Aug  9 12:27:52 michmichmachine kernel: [ 2705.176835] usb 1-1: device descriptor read/64, error 18
+Aug  9 12:27:53 michmichmachine kernel: [ 2705.561010] usb 1-1: new high-speed USB device number 3 using ehci-pci
+Aug  9 12:27:53 michmichmachine kernel: [ 2705.853246] usb 1-1: device descriptor read/64, error 18
+Aug  9 12:27:53 michmichmachine kernel: [ 2706.240323] usb 1-1: device descriptor read/64, error 18
+Aug  9 12:27:53 michmichmachine kernel: [ 2706.348437] usb usb1-port1: attempt power cycle
+Aug  9 12:27:54 michmichmachine kernel: [ 2706.701254] usb 1-1: new high-speed USB device number 4 using ehci-pci
+Aug  9 12:27:54 michmichmachine kernel: [ 2706.747957] usb 1-1: Invalid ep0 maxpacket: 9
+Aug  9 12:27:54 michmichmachine kernel: [ 2707.040533] usb 1-1: new high-speed USB device number 5 using ehci-pci
+Aug  9 12:27:54 michmichmachine kernel: [ 2707.087490] usb 1-1: Invalid ep0 maxpacket: 9
+Aug  9 12:27:54 michmichmachine kernel: [ 2707.103232] usb usb1-port1: unable to enumerate USB device
+Aug  9 12:28:53 michmichmachine kernel: [ 2766.600197] usb 1-1: new high-speed USB device number 6 using ehci-pci
+Aug  9 12:28:54 michmichmachine kernel: [ 2766.875991] usb 1-1: device descriptor read/64, error 18
+Aug  9 12:28:54 michmichmachine kernel: [ 2767.255725] usb 1-1: device descriptor read/64, error 18
+Aug  9 12:28:54 michmichmachine kernel: [ 2767.635987] usb 1-1: new high-speed USB device number 7 using ehci-pci
+Aug  9 12:28:58 michmichmachine kernel: [ 2770.832089] usb 1-1: new high-speed USB device number 8 using ehci-pci
+Aug  9 12:30:01 michmichmachine CRON[12649]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Aug  9 12:30:51 michmichmachine systemd[1084]: app-gnome-firefox\x2desr-3370.scope: Succeeded.
+Aug  9 12:30:51 michmichmachine systemd[1084]: app-gnome-firefox\x2desr-3370.scope: Consumed 59.584s CPU time.
+Aug  9 12:30:54 michmichmachine systemd[1084]: Started Application launched by gnome-shell.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 7 threads of 3 processes of 1 users.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Successfully made thread 12754 of process 12670 owned by '1000' RT at priority 10.
+Aug  9 12:30:56 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:30:57 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:30:57 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:30:59 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:30:59 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:31:01 michmichmachine gnome-shell[1212]: libinput error: event0  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 23ms, your system is too slow
+Aug  9 12:31:02 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:31:02 michmichmachine rtkit-daemon[649]: Supervising 8 threads of 4 processes of 1 users.
+Aug  9 12:31:28 michmichmachine systemd[1]: Started Run anacron jobs.
+Aug  9 12:31:28 michmichmachine anacron[12881]: Anacron 2.3 started on 2022-08-09
+Aug  9 12:31:28 michmichmachine anacron[12881]: Normal exit (0 jobs run)
+Aug  9 12:31:28 michmichmachine systemd[1]: anacron.service: Succeeded.
+Aug  9 12:34:36 michmichmachine kernel: [ 3109.637389] perf: interrupt took too long (2514 > 2500), lowering kernel.perf_event_max_sample_rate to 79500
+Aug  9 12:40:12 michmichmachine kernel: [ 3445.316822] perf: interrupt took too long (3146 > 3142), lowering kernel.perf_event_max_sample_rate to 63500
+Aug  9 12:44:29 michmichmachine PackageKit: get-updates transaction /20_adbddbdd from uid 1000 finished with success after 785ms
+Aug  9 12:50:02 michmichmachine kernel: [ 4035.160532] perf: interrupt took too long (3933 > 3932), lowering kernel.perf_event_max_sample_rate to 50750
+Aug  9 13:17:01 michmichmachine CRON[12958]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Aug  9 13:23:24 michmichmachine kernel: [ 6037.214897] perf: interrupt took too long (4918 > 4916), lowering kernel.perf_event_max_sample_rate to 40500
+Aug  9 13:30:01 michmichmachine CRON[12971]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Aug  9 13:32:40 michmichmachine systemd[1]: Started Run anacron jobs.
+Aug  9 13:32:40 michmichmachine anacron[12974]: Anacron 2.3 started on 2022-08-09
+Aug  9 13:32:40 michmichmachine anacron[12974]: Normal exit (0 jobs run)
+Aug  9 13:32:40 michmichmachine systemd[1]: anacron.service: Succeeded.
