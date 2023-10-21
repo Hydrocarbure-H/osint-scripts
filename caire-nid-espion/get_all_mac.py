@@ -1,6 +1,3 @@
-# With selenium, get all elements of mac address from the website
-# and save print it
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
